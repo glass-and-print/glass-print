@@ -30,7 +30,7 @@ www_page_regex = Regexp.new '^.*\.html$'
 body_close_tag_regex = Regexp.new '^\s*</body>\s*$'
 
 Find.find ARGV[0] do |path|
-  if www_page_regex.match path
+  if www_page_regex.match path && File.file?(path) && !File.symlink?(path)
     source = File.new path
     dest_path = path + ".tmp"
     dest = File.new dest_path, "w"
