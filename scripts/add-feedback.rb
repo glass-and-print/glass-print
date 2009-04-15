@@ -22,16 +22,18 @@ feedback = <<FEEDBACK_WIDGET_END
       tab_options.color = "#BFBD00";
       GSFN.feedback('http://getsatisfaction.com/glass-print/feedback/topics/new?display=overlay&style=question', tab_options);
     </script>
+
   </body>
 FEEDBACK_WIDGET_END
 
 www_page_regex = Regexp.new '^.*\.html$'
 body_close_tag_regex = Regexp.new '^\s*</body>\s*$'
 
-Find.find "." do |path|
+Find.find ARGV[0] do |path|
   if www_page_regex.match path
     source = File.new path
-    dest = File.new path + ".tmp", "w"
+    dest_path = path + ".tmp"
+    dest = File.new dest_path, "w"
     while line = source.gets
       if body_close_tag_regex.match line
         dest.puts feedback
@@ -39,5 +41,8 @@ Find.find "." do |path|
         dest.puts line
       end
     end
+    source.close
+    dest.close
+    File.rename dest_path, path 
   end
 end
