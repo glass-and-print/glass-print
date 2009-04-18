@@ -184,6 +184,27 @@
   padding: 0px 0px 0px 0px;
 }
 
+#news-flash {
+  -x-system-font: none;
+  font-family: "Trebuchet MS",Verdana,sans-serif;
+  color: #FF0040;
+  font-size: 16px;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: normal;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-transform: none;
+}
+
+#news-flash a {
+  color: #FF0040;
+}
+
 #piece-title {
   -x-system-font: none;
   font-family: "Trebuchet MS",Verdana,sans-serif;
