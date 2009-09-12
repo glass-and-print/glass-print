@@ -1,1 +1,8 @@
+# errors
 ErrorDocument 404 /errors/404.html
+
+# redirects
+redirect 301 /art-glass/collections              /art-glass
+redirect 301 /vintage-posters/collections        /vintage-posters
+redirect 301 /images/art-glass/collections       /images/art-glass
+redirect 301 /images/vintage-posters/collections /images/vintage-posters
