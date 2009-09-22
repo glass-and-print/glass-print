@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /images
+Disallow: /errors
+Disallow: /support-scripts
+Disallow: /58_iSMghRfNAc.txt
+
+User-agent: ia_archiver
+Disallow: /
+
