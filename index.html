@@ -20,7 +20,7 @@
         var imageHtml = imageHtmlStart + imageSrc + imageHtmlEnd;
         var imageDiv = $("#home-anime");
         imageDiv.html(imageHtml);
-        imageDiv.everyTime("3s", function(i) {
+        imageDiv.everyTime("10s", function(i) {
           if (i > 18) {
             i = i % 19;
           }
