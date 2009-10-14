@@ -18,13 +18,22 @@ redirect 301 /about-us.html /about.html
 
 #== Mignot :: Cenacle
 redirect 301 /vintage-posters/collections/maitres/0.html /vintage-posters/maitres/mignot-cenacle.html
-redirect 301 /images/vintage-posters/collections/maitres/0.jpg /images/vintage-posters/maitres/mignot-cenacle.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/0.jpg /images/vintage-posters/maitres/mignot-cenacle.jpg
 redirect 301 /images/vintage-posters/collections/maitres/high-resolution/0.jpg /images/vintage-posters/maitres/high-resolution/mignot-cenacle.jpg
 
 #== Rees :: Traumerei
 redirect 301 /vintage-posters/collections/maitres/14.html /vintage-posters/maitres/reed-traumerei.html
 redirect 301 /images/vintage-posters/collections/maitres/14.jpg /images/vintage-posters/maitres/reed-traumerei.jpg 
 redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg /images/vintage-posters/maitres/high-resolution/reed-traumerei.jpg
+
+#-----------------------------------------
+# Vintage Posters - Contemporary
+#
+
+#== Piipo :: Frida Diego
+redirect 301 /vintage-posters/collections/contemporary/0.html /vintage-posters/contemporary/piipo-fridadiego.html
+redirect 301 /images/vintage-posters/collections/contemporary/0.jpg /images/vintage-posters/contemporary/piipo-fridadiego.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/0.jpg /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg
 
 #-----------------------------------------
 # Directory redirects
