@@ -34,6 +34,15 @@ redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg 
 redirect 301 /vintage-posters/collections/contemporary/0.html /vintage-posters/contemporary/piipo-fridadiego.html
 redirect 301 /images/vintage-posters/collections/contemporary/0.jpg /images/vintage-posters/contemporary/piipo-fridadiego.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/0.jpg /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg
+redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-FridaDiego.jpg /images/vintage-posters/contemporary/piipo-fridadiego.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/KariPiipo-FridaDiego.jpg /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg
+
+#== Piipo :: ToulouseLautrec
+redirect 301 /vintage-posters/collections/contemporary/1.html /vintage-posters/contemporary/piipo-toulouselautrec.html
+redirect 301 /images/vintage-posters/collections/contemporary/1.jpg /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/1.jpg /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg
+redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg
 
 #-----------------------------------------
 # Directory redirects
