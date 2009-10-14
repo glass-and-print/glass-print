@@ -1,18 +1,34 @@
-# errors
+#--------------------------------------------------------
+# ERRORS
+#
 ErrorDocument 404 /errors/404.html
 
-# redirects - file name refactoring
+#--------------------------------------------------------
+# REDIRECTS
+#
+
+#-----------------------------------------
+# Top-level
+#
 redirect 301 /about-us.html /about.html
 
+#-----------------------------------------
+# Vintage Posters - Maitres
+#
+
+#== Mignot :: Cenacle
 redirect 301 /vintage-posters/collections/maitres/0.html /vintage-posters/maitres/mignot-cenacle.html
 redirect 301 /images/vintage-posters/collections/maitres/0.jpg /images/vintage-posters/maitres/mignot-cenacle.jpg 
 redirect 301 /images/vintage-posters/collections/maitres/high-resolution/0.jpg /images/vintage-posters/maitres/high-resolution/mignot-cenacle.jpg
 
+#== Rees :: Traumerei
 redirect 301 /vintage-posters/collections/maitres/14.html /vintage-posters/maitres/reed-traumerei.html
 redirect 301 /images/vintage-posters/collections/maitres/14.jpg /images/vintage-posters/maitres/reed-traumerei.jpg 
 redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg /images/vintage-posters/maitres/high-resolution/reed-traumerei.jpg
 
-# redirects - directory structure refactoring
+#-----------------------------------------
+# Directory redirects
+#
 redirect 301 /art-glass/collections              /art-glass
 redirect 301 /vintage-posters/collections        /vintage-posters
 redirect 301 /images/art-glass/collections       /images/art-glass
