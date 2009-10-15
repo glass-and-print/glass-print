@@ -44,6 +44,13 @@ redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/1.
 redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg
 
+#== Hilppa :: Stop Climate Change
+redirect 301 /vintage-posters/collections/contemporary/2.html /vintage-posters/contemporary/hilppa-climatechange.html
+redirect 301 /images/vintage-posters/collections/contemporary/2.jpg /images/vintage-posters/contemporary/hilppa-climatechange.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/2.jpg /images/vintage-posters/contemporary/high-resolution/hilppa-climatechange.jpg
+redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/hilppa-climatechange.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/high-resolution/hilppa-climatechange.jpg
+
 #-----------------------------------------
 # Directory redirects
 #
