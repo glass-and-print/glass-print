@@ -48,8 +48,29 @@ redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/Ka
 redirect 301 /vintage-posters/collections/contemporary/2.html /vintage-posters/contemporary/hilppa-climatechange.html
 redirect 301 /images/vintage-posters/collections/contemporary/2.jpg /images/vintage-posters/contemporary/hilppa-climatechange.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/2.jpg /images/vintage-posters/contemporary/high-resolution/hilppa-climatechange.jpg
-redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/hilppa-climatechange.jpg 
-redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/high-resolution/hilppa-climatechange.jpg
+redirect 301 /images/vintage-posters/collections/contemporary/HilppaHyrkas-StopClimateCange.jpg /images/vintage-posters/contemporary/hilppa-climatechange.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/HilppaHyrkas-StopClimateCange.jpg /images/vintage-posters/contemporary/high-resolution/hilppa-climatechange.jpg
+
+#== Troxler :: Tim Berne's Paraphrase
+redirect 301 /vintage-posters/collections/contemporary/3.html /vintage-posters/contemporary/troxler-paraphrase.html
+redirect 301 /images/vintage-posters/collections/contemporary/3.jpg /images/vintage-posters/contemporary/troxler-paraphrase.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/3.jpg /images/vintage-posters/contemporary/high-resolution/troxler-paraphrase.jpg
+redirect 301 /images/vintage-posters/collections/contemporary/NiklausTroxler-TimBerneParaphrase.jpg /images/vintage-posters/contemporary/troxler-paraphrase.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/NiklausTroxler-TimBerneParaphrase.jpg /images/vintage-posters/contemporary/high-resolution/troxler-paraphrase.jpg
+
+#== Wiesmann :: Playstation
+redirect 301 /vintage-posters/collections/contemporary/4.html /vintage-posters/contemporary/wiesmann-playstation.html
+redirect 301 /images/vintage-posters/collections/contemporary/4.png /images/vintage-posters/contemporary/wiesmann-playstation.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/4.png /images/vintage-posters/contemporary/high-resolution/wiesmann-playstation.jpg
+redirect 301 /images/vintage-posters/collections/contemporary/DanielWiesmann-Playstation.png /images/vintage-posters/contemporary/wiesmann-playstation.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/DanielWiesmann-Playstation.png /images/vintage-posters/contemporary/high-resolution/wiesmann-playstation.jpg
+
+#== Wiesmann :: The Truth About Chaos
+redirect 301 /vintage-posters/collections/contemporary/5.html /vintage-posters/contemporary/wiesmann-truth.html
+redirect 301 /images/vintage-posters/collections/contemporary/5.png /images/vintage-posters/contemporary/wiesmann-truth.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/5.png /images/vintage-posters/contemporary/high-resolution/wiesmann-truth.jpg
+redirect 301 /images/vintage-posters/collections/contemporary/DanielWiesmann-TheTruth.png /images/vintage-posters/contemporary/wiesmann-truth.jpg 
+redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/DanielWiesmann-TheTruth.png /images/vintage-posters/contemporary/high-resolution/wiesmann-truth.jpg
 
 #-----------------------------------------
 # Directory redirects
