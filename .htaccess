@@ -73,6 +73,42 @@ redirect 301 /images/vintage-posters/collections/contemporary/DanielWiesmann-The
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/DanielWiesmann-TheTruth.png /images/vintage-posters/contemporary/high-resolution/wiesmann-truth.jpg
 
 #-----------------------------------------
+# Art Glass - Penelope Wurr
+#
+
+#== Pocket Vase Hula
+redirect 301 /art-glass/collections/penny/0.html /art-glass/penny/hula.html
+redirect 301 /images/art-glass/collections/penny/0.jpg /images/art-glass/penny/hula.jpg
+
+#== Pocket Vase Hula w/ Feather
+redirect 301 /art-glass/collections/penny/1.html /art-glass/penny/hula-feather.html
+redirect 301 /images/art-glass/collections/penny/1.jpg /images/art-glass/penny/hula-feather.jpg
+
+#==
+redirect 301 /art-glass/collections/penny/2.html /art-glass/penny/bowtie-segment.html
+redirect 301 /images/art-glass/collections/penny/2.jpg /images/art-glass/penny/bowtie-segment.jpg
+
+#==
+redirect 301 /art-glass/collections/penny/3.html /art-glass/penny/bowtie-waistcoat.html
+redirect 301 /images/art-glass/collections/penny/3.jpg /images/art-glass/penny/bowtie-waistcoat.jpg
+
+#==
+redirect 301 /art-glass/collections/penny/4.html /art-glass/penny/chimney.html
+redirect 301 /images/art-glass/collections/penny/4.jpg /images/art-glass/penny/chimney.jpg
+
+#==
+redirect 301 /art-glass/collections/penny/5.html /art-glass/penny/seagrass-egg.html
+redirect 301 /images/art-glass/collections/penny/5.jpg /images/art-glass/penny/seagrass-egg.jpg
+
+#==
+redirect 301 /art-glass/collections/penny/6.html /art-glass/penny/seagrass-bowl.html
+redirect 301 /images/art-glass/collections/penny/6.jpg /images/art-glass/penny/seagrass-bowl.jpg
+
+#==
+redirect 301 /art-glass/collections/penny/7.html /art-glass/penny/willow-tank.html
+redirect 301 /images/art-glass/collections/penny/7.jpg /images/art-glass/penny/willow-tank.jpg
+
+#-----------------------------------------
 # Directory redirects
 #
 redirect 301 /art-glass/collections              /art-glass
