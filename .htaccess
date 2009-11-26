@@ -30,19 +30,31 @@ redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg 
 # Vintage Posters - Contemporary
 #
 
-#== Piipo :: Frida Diego
+#== Piippo :: Frida Diego
 redirect 301 /vintage-posters/collections/contemporary/0.html /vintage-posters/contemporary/piipo-fridadiego.html
 redirect 301 /images/vintage-posters/collections/contemporary/0.jpg /images/vintage-posters/contemporary/piipo-fridadiego.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/0.jpg /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-FridaDiego.jpg /images/vintage-posters/contemporary/piipo-fridadiego.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/KariPiipo-FridaDiego.jpg /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg
+#=== last name typo - argh
+redirect 301 /vintage-posters/contemporary/piipo-fridadiego.html /vintage-posters/contemporary/piippo-fridadiego.html
+redirect 301 /images/vintage-posters/contemporary/piipo-fridadiego.jpg /images/vintage-posters/contemporary/piippo-fridadiego.jpg
+redirect 301 /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg /images/vintage-posters/contemporary/high-resolution/piippo-fridadiego.jpg
+redirect 301 /images/vintage-posters/contemporary/piipo-fridadiego.jpg /images/vintage-posters/contemporary/piippo-fridadiego.jpg
+redirect 301 /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg /images/vintage-posters/contemporary/high-resolution/piippo-fridadiego.jpg
 
-#== Piipo :: ToulouseLautrec
+#== Piippo :: ToulouseLautrec
 redirect 301 /vintage-posters/collections/contemporary/1.html /vintage-posters/contemporary/piipo-toulouselautrec.html
 redirect 301 /images/vintage-posters/collections/contemporary/1.jpg /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/1.jpg /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg
+#=== last name typo - argh
+redirect 301 /vintage-posters/contemporary/piipo-toulouselautrec.html /vintage-posters/contemporary/piippo-toulouselautrec.html
+redirect 301 /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg /images/vintage-posters/contemporary/piippo-toulouselautrec.jpg
+redirect 301 /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg /images/vintage-posters/contemporary/high-resolution/piippo-toulouselautrec.jpg
+redirect 301 /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg /images/vintage-posters/contemporary/piippo-toulouselautrec.jpg
+redirect 301 /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg /images/vintage-posters/contemporary/high-resolution/piippo-toulouselautrec.jpg
 
 #== Hilppa :: Stop Climate Change
 redirect 301 /vintage-posters/collections/contemporary/2.html /vintage-posters/contemporary/hilppa-climatechange.html
