@@ -27,6 +27,40 @@ redirect 301 /images/vintage-posters/collections/maitres/14.jpg /images/vintage-
 redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg /images/vintage-posters/maitres/high-resolution/reed-traumerei.jpg
 
 #-----------------------------------------
+# Vintage Posters - Small Format
+#
+
+#== Savignac :: Bic Flex
+redirect 301 /vintage-posters/collections/small-format/0.html /vintage-posters/small-format/savignac-bicflex.html
+redirect 301 /images/vintage-posters/collections/small-format/0.jpg /images/vintage-posters/small-format/savignac-bicflex.jpg
+redirect 301 /images/vintage-posters/collections/small-format/high-resolution/0.jpg /images/vintage-posters/small-format/high-resolution/savignac-bicflex.jpg
+
+#== Savignac :: Bic Runs
+redirect 301 /vintage-posters/collections/small-format/1.html /vintage-posters/small-format/savignac-bicruns.html
+redirect 301 /images/vintage-posters/collections/small-format/1.jpg /images/vintage-posters/small-format/savignac-bicruns.jpg
+redirect 301 /images/vintage-posters/collections/small-format/high-resolution/1.jpg /images/vintage-posters/small-format/high-resolution/savignac-bicruns.jpg
+
+#== Ravo :: Radiola
+redirect 301 /vintage-posters/collections/small-format/2.html /vintage-posters/small-format/ravo-radiola.html
+redirect 301 /images/vintage-posters/collections/small-format/2.jpg /images/vintage-posters/small-format/ravo-radiola.jpg
+redirect 301 /images/vintage-posters/collections/small-format/high-resolution/2.jpg /images/vintage-posters/small-format/high-resolution/ravo-radiola.jpg
+
+#== Cappiello :: Umbrellas
+redirect 301 /vintage-posters/collections/small-format/3.html /vintage-posters/small-format/cappiello-umbrellas.html
+redirect 301 /images/vintage-posters/collections/small-format/3.jpg /images/vintage-posters/small-format/cappiello-umbrellas.jpg
+redirect 301 /images/vintage-posters/collections/small-format/high-resolution/3.jpg /images/vintage-posters/small-format/high-resolution/cappiello-umbrellas.jpg
+
+#== Morvan :: Pasta
+redirect 301 /vintage-posters/collections/small-format/4.html /vintage-posters/small-format/morvan-pasta.html
+redirect 301 /images/vintage-posters/collections/small-format/4.jpg /images/vintage-posters/small-format/morvan-pasta.jpg
+redirect 301 /images/vintage-posters/collections/small-format/high-resolution/4.jpg /images/vintage-posters/small-format/high-resolution/morvan-pasta.jpg
+
+#== Morvan :: Sauce
+redirect 301 /vintage-posters/collections/small-format/5.html /vintage-posters/small-format/morvan-sauce.html
+redirect 301 /images/vintage-posters/collections/small-format/5.jpg /images/vintage-posters/small-format/morvan-sauce.jpg
+redirect 301 /images/vintage-posters/collections/small-format/high-resolution/5.jpg /images/vintage-posters/small-format/high-resolution/morvan-sauce.jpg
+
+#-----------------------------------------
 # Vintage Posters - Contemporary
 #
 
