@@ -34,31 +34,117 @@ redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg 
 redirect 301 /vintage-posters/collections/small-format/0.html /vintage-posters/small-format/savignac-bicflex.html
 redirect 301 /images/vintage-posters/collections/small-format/0.jpg /images/vintage-posters/small-format/savignac-bicflex.jpg
 redirect 301 /images/vintage-posters/collections/small-format/high-resolution/0.jpg /images/vintage-posters/small-format/high-resolution/savignac-bicflex.jpg
+redirect 301 /vintage-posters/small-format/0.html /vintage-posters/small-format/savignac-bicflex.html
+redirect 301 /images/vintage-posters/small-format/0.jpg /images/vintage-posters/small-format/savignac-bicflex.jpg
+redirect 301 /images/vintage-posters/small-format/high-resolution/0.jpg /images/vintage-posters/small-format/high-resolution/savignac-bicflex.jpg
 
 #== Savignac :: Bic Runs
 redirect 301 /vintage-posters/collections/small-format/1.html /vintage-posters/small-format/savignac-bicruns.html
 redirect 301 /images/vintage-posters/collections/small-format/1.jpg /images/vintage-posters/small-format/savignac-bicruns.jpg
 redirect 301 /images/vintage-posters/collections/small-format/high-resolution/1.jpg /images/vintage-posters/small-format/high-resolution/savignac-bicruns.jpg
+redirect 301 /vintage-posters/small-format/1.html /vintage-posters/small-format/savignac-bicruns.html
+redirect 301 /images/vintage-posters/small-format/1.jpg /images/vintage-posters/small-format/savignac-bicruns.jpg
+redirect 301 /images/vintage-posters/small-format/high-resolution/1.jpg /images/vintage-posters/small-format/high-resolution/savignac-bicruns.jpg
 
 #== Ravo :: Radiola
 redirect 301 /vintage-posters/collections/small-format/2.html /vintage-posters/small-format/ravo-radiola.html
 redirect 301 /images/vintage-posters/collections/small-format/2.jpg /images/vintage-posters/small-format/ravo-radiola.jpg
 redirect 301 /images/vintage-posters/collections/small-format/high-resolution/2.jpg /images/vintage-posters/small-format/high-resolution/ravo-radiola.jpg
+redirect 301 /vintage-posters/small-format/2.html /vintage-posters/small-format/ravo-radiola.html
+redirect 301 /images/vintage-posters/small-format/2.jpg /images/vintage-posters/small-format/ravo-radiola.jpg
+redirect 301 /images/vintage-posters/small-format/high-resolution/2.jpg /images/vintage-posters/small-format/high-resolution/ravo-radiola.jpg
 
 #== Cappiello :: Umbrellas
 redirect 301 /vintage-posters/collections/small-format/3.html /vintage-posters/small-format/cappiello-umbrellas.html
 redirect 301 /images/vintage-posters/collections/small-format/3.jpg /images/vintage-posters/small-format/cappiello-umbrellas.jpg
 redirect 301 /images/vintage-posters/collections/small-format/high-resolution/3.jpg /images/vintage-posters/small-format/high-resolution/cappiello-umbrellas.jpg
+redirect 301 /vintage-posters/small-format/3.html /vintage-posters/small-format/cappiello-umbrellas.html
+redirect 301 /images/vintage-posters/small-format/3.jpg /images/vintage-posters/small-format/cappiello-umbrellas.jpg
+redirect 301 /images/vintage-posters/small-format/high-resolution/3.jpg /images/vintage-posters/small-format/high-resolution/cappiello-umbrellas.jpg
 
 #== Morvan :: Pasta
 redirect 301 /vintage-posters/collections/small-format/4.html /vintage-posters/small-format/morvan-pasta.html
 redirect 301 /images/vintage-posters/collections/small-format/4.jpg /images/vintage-posters/small-format/morvan-pasta.jpg
 redirect 301 /images/vintage-posters/collections/small-format/high-resolution/4.jpg /images/vintage-posters/small-format/high-resolution/morvan-pasta.jpg
+redirect 301 /vintage-posters/small-format/4.html /vintage-posters/small-format/morvan-pasta.html
+redirect 301 /images/vintage-posters/small-format/4.jpg /images/vintage-posters/small-format/morvan-pasta.jpg
+redirect 301 /images/vintage-posters/small-format/high-resolution/4.jpg /images/vintage-posters/small-format/high-resolution/morvan-pasta.jpg
 
 #== Morvan :: Sauce
 redirect 301 /vintage-posters/collections/small-format/5.html /vintage-posters/small-format/morvan-sauce.html
 redirect 301 /images/vintage-posters/collections/small-format/5.jpg /images/vintage-posters/small-format/morvan-sauce.jpg
 redirect 301 /images/vintage-posters/collections/small-format/high-resolution/5.jpg /images/vintage-posters/small-format/high-resolution/morvan-sauce.jpg
+redirect 301 /vintage-posters/small-format/5.html /vintage-posters/small-format/morvan-sauce.html
+redirect 301 /images/vintage-posters/small-format/5.jpg /images/vintage-posters/small-format/morvan-sauce.jpg
+redirect 301 /images/vintage-posters/small-format/high-resolution/5.jpg /images/vintage-posters/small-format/high-resolution/morvan-sauce.jpg
+
+#-----------------------------------------
+# Vintage Posters - Modern
+#
+
+#== Magda Andrade :: Tropical Magic
+redirect 301 /vintage-posters/collections/modern/0.html /vintage-posters/modern/magda-magic.html
+redirect 301 /images/vintage-posters/collections/modern/0.jpg /images/vintage-posters/modern/magda-magic.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/0.jpg /images/vintage-posters/modern/high-resolution/magda-magic.jpg
+redirect 301 /vintage-posters/modern/0.html /vintage-posters/modern/magda-magic.html
+redirect 301 /images/vintage-posters/modern/0.jpg /images/vintage-posters/modern/magda-magic.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/0.jpg /images/vintage-posters/modern/high-resolution/magda-magic.jpg
+
+#== Lucien Lautrec :: Paintings and Stencils
+redirect 301 /vintage-posters/collections/modern/1.html /vintage-posters/modern/lautrec-stencils.html
+redirect 301 /images/vintage-posters/collections/modern/1.jpg /images/vintage-posters/modern/lautrec-stencils.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/1.jpg /images/vintage-posters/modern/high-resolution/lautrec-stencils.jpg
+redirect 301 /vintage-posters/modern/1.html /vintage-posters/modern/lautrec-stencils.html
+redirect 301 /images/vintage-posters/modern/1.jpg /images/vintage-posters/modern/lautrec-stencils.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/1.jpg /images/vintage-posters/modern/high-resolution/lautrec-stencils.jpg
+
+#== Jacques Fath:: Spring 1953
+redirect 301 /vintage-posters/collections/modern/2.html /vintage-posters/modern/fath-spring.html
+redirect 301 /images/vintage-posters/collections/modern/2.jpg /images/vintage-posters/modern/fath-spring.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/2.jpg /images/vintage-posters/modern/high-resolution/fath-spring.jpg
+redirect 301 /vintage-posters/modern/2.html /vintage-posters/modern/fath-spring.html
+redirect 301 /images/vintage-posters/modern/2.jpg /images/vintage-posters/modern/fath-spring.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/2.jpg /images/vintage-posters/modern/high-resolution/fath-spring.jpg
+
+#== Yvonne Mottet :: Bobigny
+redirect 301 /vintage-posters/collections/modern/3.html /vintage-posters/modern/mottet-bobigny.html
+redirect 301 /images/vintage-posters/collections/modern/3.jpg /images/vintage-posters/modern/mottet-bobigny.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/3.jpg /images/vintage-posters/modern/high-resolution/mottet-bobigny.jpg
+redirect 301 /vintage-posters/modern/3.html /vintage-posters/modern/mottet-bobigny.html
+redirect 301 /images/vintage-posters/modern/3.jpg /images/vintage-posters/modern/mottet-bobigny.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/3.jpg /images/vintage-posters/modern/high-resolution/mottet-bobigny.jpg
+
+#== Defossez :: Paris
+redirect 301 /vintage-posters/collections/modern/4.html /vintage-posters/modern/defossez-paris.html
+redirect 301 /images/vintage-posters/collections/modern/4.jpg /images/vintage-posters/modern/defossez-paris.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/4.jpg /images/vintage-posters/modern/high-resolution/defossez-paris.jpg
+redirect 301 /vintage-posters/modern/4.html /vintage-posters/modern/defossez-paris.html
+redirect 301 /images/vintage-posters/modern/4.jpg /images/vintage-posters/modern/defossez-paris.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/4.jpg /images/vintage-posters/modern/high-resolution/defossez-paris.jpg
+
+#== Caly :: Birtschansky
+redirect 301 /vintage-posters/collections/modern/5.html /vintage-posters/modern/caly-birtschansky.html
+redirect 301 /images/vintage-posters/collections/modern/5.jpg /images/vintage-posters/modern/caly-birtschansky.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/5.jpg /images/vintage-posters/modern/high-resolution/caly-birtschansky.jpg
+redirect 301 /vintage-posters/modern/5.html /vintage-posters/modern/caly-birtschansky.html
+redirect 301 /images/vintage-posters/modern/5.jpg /images/vintage-posters/modern/caly-birtschansky.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/5.jpg /images/vintage-posters/modern/high-resolution/caly-birtschansky.jpg
+
+#== Scholz :: Pastels
+redirect 301 /vintage-posters/collections/modern/6.html /vintage-posters/modern/scholz-pastels.html
+redirect 301 /images/vintage-posters/collections/modern/6.jpg /images/vintage-posters/modern/scholz-pastels.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/6.jpg /images/vintage-posters/modern/high-resolution/scholz-pastels.jpg
+redirect 301 /vintage-posters/modern/6.html /vintage-posters/modern/scholz-pastels.html
+redirect 301 /images/vintage-posters/modern/6.jpg /images/vintage-posters/modern/scholz-pastels.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/6.jpg /images/vintage-posters/modern/high-resolution/scholz-pastels.jpg
+
+#== Scholz :: Fricker
+redirect 301 /vintage-posters/collections/modern/7.html /vintage-posters/modern/scholz-fricker.html
+redirect 301 /images/vintage-posters/collections/modern/7.jpg /images/vintage-posters/modern/scholz-fricker.jpg
+redirect 301 /images/vintage-posters/collections/modern/high-resolution/7.jpg /images/vintage-posters/modern/high-resolution/scholz-fricker.jpg
+redirect 301 /vintage-posters/modern/7.html /vintage-posters/modern/scholz-fricker.html
+redirect 301 /images/vintage-posters/modern/7.jpg /images/vintage-posters/modern/scholz-fricker.jpg
+redirect 301 /images/vintage-posters/modern/high-resolution/7.jpg /images/vintage-posters/modern/high-resolution/scholz-fricker.jpg
 
 #-----------------------------------------
 # Vintage Posters - Contemporary
@@ -66,6 +152,7 @@ redirect 301 /images/vintage-posters/collections/small-format/high-resolution/5.
 
 #== Piippo :: Frida Diego
 redirect 301 /vintage-posters/collections/contemporary/0.html /vintage-posters/contemporary/piipo-fridadiego.html
+redirect 301 /vintage-posters/contemporary/0.html /vintage-posters/contemporary/piippo-fridadiego.html
 redirect 301 /images/vintage-posters/collections/contemporary/0.jpg /images/vintage-posters/contemporary/piipo-fridadiego.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/0.jpg /images/vintage-posters/contemporary/high-resolution/piipo-fridadiego.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-FridaDiego.jpg /images/vintage-posters/contemporary/piipo-fridadiego.jpg 
@@ -79,6 +166,7 @@ redirect 301 /images/vintage-posters/contemporary/high-resolution/piipo-fridadie
 
 #== Piippo :: ToulouseLautrec
 redirect 301 /vintage-posters/collections/contemporary/1.html /vintage-posters/contemporary/piipo-toulouselautrec.html
+redirect 301 /vintage-posters/contemporary/1.html /vintage-posters/contemporary/piippo-toulouselautrec.html
 redirect 301 /images/vintage-posters/collections/contemporary/1.jpg /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/1.jpg /images/vintage-posters/contemporary/high-resolution/piipo-toulouselautrec.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/KariPiipo-ToulouseLautrec.jpg /images/vintage-posters/contemporary/piipo-toulouselautrec.jpg 
@@ -92,6 +180,7 @@ redirect 301 /images/vintage-posters/contemporary/high-resolution/piipo-toulouse
 
 #== Hilppa :: Stop Climate Change
 redirect 301 /vintage-posters/collections/contemporary/2.html /vintage-posters/contemporary/hilppa-climatechange.html
+redirect 301 /vintage-posters/contemporary/2.html /vintage-posters/contemporary/hilppa-climatechange.html
 redirect 301 /images/vintage-posters/collections/contemporary/2.jpg /images/vintage-posters/contemporary/hilppa-climatechange.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/2.jpg /images/vintage-posters/contemporary/high-resolution/hilppa-climatechange.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/HilppaHyrkas-StopClimateCange.jpg /images/vintage-posters/contemporary/hilppa-climatechange.jpg 
@@ -99,6 +188,7 @@ redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/Hi
 
 #== Troxler :: Tim Berne's Paraphrase
 redirect 301 /vintage-posters/collections/contemporary/3.html /vintage-posters/contemporary/troxler-paraphrase.html
+redirect 301 /vintage-posters/contemporary/3.html /vintage-posters/contemporary/troxler-paraphrase.html
 redirect 301 /images/vintage-posters/collections/contemporary/3.jpg /images/vintage-posters/contemporary/troxler-paraphrase.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/3.jpg /images/vintage-posters/contemporary/high-resolution/troxler-paraphrase.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/NiklausTroxler-TimBerneParaphrase.jpg /images/vintage-posters/contemporary/troxler-paraphrase.jpg 
@@ -106,6 +196,7 @@ redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/Ni
 
 #== Wiesmann :: Playstation
 redirect 301 /vintage-posters/collections/contemporary/4.html /vintage-posters/contemporary/wiesmann-playstation.html
+redirect 301 /vintage-posters/contemporary/4.html /vintage-posters/contemporary/wiesmann-playstation.html
 redirect 301 /images/vintage-posters/collections/contemporary/4.png /images/vintage-posters/contemporary/wiesmann-playstation.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/4.png /images/vintage-posters/contemporary/high-resolution/wiesmann-playstation.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/DanielWiesmann-Playstation.png /images/vintage-posters/contemporary/wiesmann-playstation.jpg 
@@ -113,6 +204,7 @@ redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/Da
 
 #== Wiesmann :: The Truth About Chaos
 redirect 301 /vintage-posters/collections/contemporary/5.html /vintage-posters/contemporary/wiesmann-truth.html
+redirect 301 /vintage-posters/contemporary/5.html /vintage-posters/contemporary/wiesmann-truth.html
 redirect 301 /images/vintage-posters/collections/contemporary/5.png /images/vintage-posters/contemporary/wiesmann-truth.jpg 
 redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/5.png /images/vintage-posters/contemporary/high-resolution/wiesmann-truth.jpg
 redirect 301 /images/vintage-posters/collections/contemporary/DanielWiesmann-TheTruth.png /images/vintage-posters/contemporary/wiesmann-truth.jpg 
@@ -123,27 +215,35 @@ redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/Da
 #
 
 redirect 301 /art-glass/collections/penny/0.html /art-glass/penny/hula.html
+redirect 301 /art-glass/penny/0.html /art-glass/penny/hula.html
 redirect 301 /images/art-glass/collections/penny/0.jpg /images/art-glass/penny/hula.jpg
 
 redirect 301 /art-glass/collections/penny/1.html /art-glass/penny/hula-feather.html
+redirect 301 /art-glass/penny/1.html /art-glass/penny/hula-feather.html
 redirect 301 /images/art-glass/collections/penny/1.jpg /images/art-glass/penny/hula-feather.jpg
 
 redirect 301 /art-glass/collections/penny/2.html /art-glass/penny/bowtie-segment.html
+redirect 301 /art-glass/penny/2.html /art-glass/penny/bowtie-segment.html
 redirect 301 /images/art-glass/collections/penny/2.jpg /images/art-glass/penny/bowtie-segment.jpg
 
 redirect 301 /art-glass/collections/penny/3.html /art-glass/penny/bowtie-waistcoat.html
+redirect 301 /art-glass/penny/3.html /art-glass/penny/bowtie-waistcoat.html
 redirect 301 /images/art-glass/collections/penny/3.jpg /images/art-glass/penny/bowtie-waistcoat.jpg
 
 redirect 301 /art-glass/collections/penny/4.html /art-glass/penny/chimney.html
+redirect 301 /art-glass/penny/4.html /art-glass/penny/chimney.html
 redirect 301 /images/art-glass/collections/penny/4.jpg /images/art-glass/penny/chimney.jpg
 
 redirect 301 /art-glass/collections/penny/5.html /art-glass/penny/seagrass-egg.html
+redirect 301 /art-glass/penny/5.html /art-glass/penny/seagrass-egg.html
 redirect 301 /images/art-glass/collections/penny/5.jpg /images/art-glass/penny/seagrass-egg.jpg
 
 redirect 301 /art-glass/collections/penny/6.html /art-glass/penny/seagrass-bowl.html
+redirect 301 /art-glass/penny/6.html /art-glass/penny/seagrass-bowl.html
 redirect 301 /images/art-glass/collections/penny/6.jpg /images/art-glass/penny/seagrass-bowl.jpg
 
 redirect 301 /art-glass/collections/penny/7.html /art-glass/penny/willow-tank.html
+redirect 301 /art-glass/penny/7.html /art-glass/penny/willow-tank.html
 redirect 301 /images/art-glass/collections/penny/7.jpg /images/art-glass/penny/willow-tank.jpg
 
 #-----------------------------------------
@@ -151,21 +251,27 @@ redirect 301 /images/art-glass/collections/penny/7.jpg /images/art-glass/penny/w
 #
 
 redirect 301 /art-glass/collections/adam/0.html /art-glass/adam/miro-norina.html
+redirect 301 /art-glass/adam/0.html /art-glass/adam/miro-norina.html
 redirect 301 /images/art-glass/collections/adam/0.jpg /images/art-glass/adam/miro-norina.jpg
 
 redirect 301 /art-glass/collections/adam/1.html /art-glass/adam/miro-pippa.html
+redirect 301 /art-glass/adam/1.html /art-glass/adam/miro-pippa.html
 redirect 301 /images/art-glass/collections/adam/1.jpg /images/art-glass/adam/miro-pippa.jpg
 
 redirect 301 /art-glass/collections/adam/2.html /art-glass/adam/poppy-anya.html
+redirect 301 /art-glass/adam/2.html /art-glass/adam/poppy-anya.html
 redirect 301 /images/art-glass/collections/adam/2.jpg /images/art-glass/adam/poppy-anya.jpg
 
 redirect 301 /art-glass/collections/adam/3.html /art-glass/adam/poppy-pippa.html
+redirect 301 /art-glass/adam/3.html /art-glass/adam/poppy-pippa.html
 redirect 301 /images/art-glass/collections/adam/3.jpg /images/art-glass/adam/poppy-pippa.jpg
 
 redirect 301 /art-glass/collections/adam/4.html /art-glass/adam/bark-bottle.html
+redirect 301 /art-glass/adam/4.html /art-glass/adam/bark-bottle.html
 redirect 301 /images/art-glass/collections/adam/4.jpg /images/art-glass/adam/bark-bottle.jpg
 
 redirect 301 /art-glass/collections/adam/5.html /art-glass/adam/ovid-landscape.html
+redirect 301 /art-glass/adam/5.html /art-glass/adam/ovid-landscape.html
 redirect 301 /images/art-glass/collections/adam/5.jpg /images/art-glass/adam/ovid-landscape.jpg
 
 #-----------------------------------------
