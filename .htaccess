@@ -214,34 +214,42 @@ redirect 301 /images/vintage-posters/collections/contemporary/high-resolution/Da
 # Art Glass - Penelope Wurr
 #
 
+#== Hula
 redirect 301 /art-glass/collections/penny/0.html /art-glass/penny/hula.html
 redirect 301 /art-glass/penny/0.html /art-glass/penny/hula.html
 redirect 301 /images/art-glass/collections/penny/0.jpg /images/art-glass/penny/hula.jpg
 
+#== Hula w/ Feather
 redirect 301 /art-glass/collections/penny/1.html /art-glass/penny/hula-feather.html
 redirect 301 /art-glass/penny/1.html /art-glass/penny/hula-feather.html
 redirect 301 /images/art-glass/collections/penny/1.jpg /images/art-glass/penny/hula-feather.jpg
 
+#== Bowtie Segment
 redirect 301 /art-glass/collections/penny/2.html /art-glass/penny/bowtie-segment.html
 redirect 301 /art-glass/penny/2.html /art-glass/penny/bowtie-segment.html
 redirect 301 /images/art-glass/collections/penny/2.jpg /images/art-glass/penny/bowtie-segment.jpg
 
+#== Bowtie Waistcoat
 redirect 301 /art-glass/collections/penny/3.html /art-glass/penny/bowtie-waistcoat.html
 redirect 301 /art-glass/penny/3.html /art-glass/penny/bowtie-waistcoat.html
 redirect 301 /images/art-glass/collections/penny/3.jpg /images/art-glass/penny/bowtie-waistcoat.jpg
 
+#== Chimney
 redirect 301 /art-glass/collections/penny/4.html /art-glass/penny/chimney.html
 redirect 301 /art-glass/penny/4.html /art-glass/penny/chimney.html
 redirect 301 /images/art-glass/collections/penny/4.jpg /images/art-glass/penny/chimney.jpg
 
+#== Seagrass Egg
 redirect 301 /art-glass/collections/penny/5.html /art-glass/penny/seagrass-egg.html
 redirect 301 /art-glass/penny/5.html /art-glass/penny/seagrass-egg.html
 redirect 301 /images/art-glass/collections/penny/5.jpg /images/art-glass/penny/seagrass-egg.jpg
 
+#== Seagrass Bowl
 redirect 301 /art-glass/collections/penny/6.html /art-glass/penny/seagrass-bowl.html
 redirect 301 /art-glass/penny/6.html /art-glass/penny/seagrass-bowl.html
 redirect 301 /images/art-glass/collections/penny/6.jpg /images/art-glass/penny/seagrass-bowl.jpg
 
+#== Willow Tank
 redirect 301 /art-glass/collections/penny/7.html /art-glass/penny/willow-tank.html
 redirect 301 /art-glass/penny/7.html /art-glass/penny/willow-tank.html
 redirect 301 /images/art-glass/collections/penny/7.jpg /images/art-glass/penny/willow-tank.jpg
