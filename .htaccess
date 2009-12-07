@@ -18,13 +18,123 @@ redirect 301 /about-us.html /about.html
 
 #== Mignot :: Cenacle
 redirect 301 /vintage-posters/collections/maitres/0.html /vintage-posters/maitres/mignot-cenacle.html
+redirect 301 /vintage-posters/maitres/0.html /vintage-posters/maitres/mignot-cenacle.html
 redirect 301 /images/vintage-posters/collections/maitres/0.jpg /images/vintage-posters/maitres/mignot-cenacle.jpg
 redirect 301 /images/vintage-posters/collections/maitres/high-resolution/0.jpg /images/vintage-posters/maitres/high-resolution/mignot-cenacle.jpg
 
-#== Rees :: Traumerei
+#== Cheret :: Rainbow
+redirect 301 /vintage-posters/collections/maitres/1.html /vintage-posters/maitres/cheret-rainbow.html
+redirect 301 /vintage-posters/maitres/1.html /vintage-posters/maitres/cheret-rainbow.html
+redirect 301 /images/vintage-posters/collections/maitres/1.jpg /images/vintage-posters/maitres/cheret-rainbow.jpg
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/1.jpg /images/vintage-posters/maitres/high-resolution/cheret-rainbow.jpg
+
+#== Hardy :: Gaiety
+redirect 301 /vintage-posters/collections/maitres/2.html /vintage-posters/maitres/hardy-gaiety.html
+redirect 301 /vintage-posters/maitres/2.html /vintage-posters/maitres/hardy-gaiety.html
+redirect 301 /images/vintage-posters/collections/maitres/2.jpg /images/vintage-posters/maitres/hardy-gaiety.jpg
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/2.jpg /images/vintage-posters/maitres/high-resolution/hardy-gaiety.jpg
+
+#== Hardy :: To-day
+redirect 301 /vintage-posters/collections/maitres/3.html /vintage-posters/maitres/hardy-today.html
+redirect 301 /vintage-posters/maitres/3.html /vintage-posters/maitres/hardy-today.html
+redirect 301 /images/vintage-posters/collections/maitres/3.jpg /images/vintage-posters/maitres/hardy-today.jpg
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/3.jpg /images/vintage-posters/maitres/high-resolution/hardy-today.jpg
+
+#  4.html -> willette-cacao.html
+redirect 301 /vintage-posters/collections/maitres/4.html /vintage-posters/maitres/willette-cacao.html
+redirect 301 /vintage-posters/maitres/4.html /vintage-posters/maitres/willette-cacao.html
+redirect 301 /images/vintage-posters/collections/maitres/4.jpg /images/vintage-posters/maitres/willette-cacao.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/4.jpg /images/vintage-posters/maitres/high-resolution/willette-cacao.jpg
+
+#  5.html -> bradley-echo.html
+redirect 301 /vintage-posters/collections/maitres/5.html /vintage-posters/maitres/bradley-echo.html
+redirect 301 /vintage-posters/maitres/5.html /vintage-posters/maitres/bradley-echo.html
+redirect 301 /images/vintage-posters/collections/maitres/5.jpg /images/vintage-posters/maitres/bradley-echo.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/5.jpg /images/vintage-posters/maitres/high-resolution/bradley-echo.jpg
+
+#  6.html -> schwabe-rose.html
+redirect 301 /vintage-posters/collections/maitres/6.html /vintage-posters/maitres/schwabe-rose.html
+redirect 301 /vintage-posters/maitres/6.html /vintage-posters/maitres/schwabe-rose.html
+redirect 301 /images/vintage-posters/collections/maitres/6.jpg /images/vintage-posters/maitres/schwabe-rose.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/6.jpg /images/vintage-posters/maitres/high-resolution/schwabe-rose.jpg
+
+#  7.html -> cheret-pan.html
+redirect 301 /vintage-posters/collections/maitres/7.html /vintage-posters/maitres/cheret-pan.html
+redirect 301 /vintage-posters/maitres/7.html /vintage-posters/maitres/cheret-pan.html
+redirect 301 /images/vintage-posters/collections/maitres/7.jpg /images/vintage-posters/maitres/cheret-pan.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/7.jpg /images/vintage-posters/maitres/high-resolution/cheret-pan.jpg
+
+#  8.html -> freres-sourire.html
+redirect 301 /vintage-posters/collections/maitres/8.html /vintage-posters/maitres/freres-sourire.html
+redirect 301 /vintage-posters/maitres/8.html /vintage-posters/maitres/freres-sourire.html
+redirect 301 /images/vintage-posters/collections/maitres/8.jpg /images/vintage-posters/maitres/freres-sourire.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/8.jpg /images/vintage-posters/maitres/high-resolution/freres-sourire.jpg
+
+#  9.html -> cheret-dubonnet.html
+redirect 301 /vintage-posters/collections/maitres/9.html /vintage-posters/maitres/cheret-dubonnet.html
+redirect 301 /vintage-posters/maitres/9.html /vintage-posters/maitres/cheret-dubonnet.html
+redirect 301 /images/vintage-posters/collections/maitres/9.jpg /images/vintage-posters/maitres/cheret-dubonnet.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/9.jpg /images/vintage-posters/maitres/high-resolution/cheret-dubonnet.jpg
+
+# 10.html -> cheret-music.html
+redirect 301 /vintage-posters/collections/maitres/10.html /vintage-posters/maitres/cheret-music.html
+redirect 301 /vintage-posters/maitres/10.html /vintage-posters/maitres/cheret-music.html
+redirect 301 /images/vintage-posters/collections/maitres/10.jpg /images/vintage-posters/maitres/cheret-music.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/10.jpg /images/vintage-posters/maitres/high-resolution/cheret-music.jpg
+
+# 11.html -> rhead-sun.html
+redirect 301 /vintage-posters/collections/maitres/11.html /vintage-posters/maitres/rhead-sun.html
+redirect 301 /vintage-posters/maitres/11.html /vintage-posters/maitres/rhead-sun.html
+redirect 301 /images/vintage-posters/collections/maitres/11.jpg /images/vintage-posters/maitres/rhead-sun.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/11.jpg /images/vintage-posters/maitres/high-resolution/rhead-sun.jpg
+
+# 12.html -> hardy-abbotts.html
+redirect 301 /vintage-posters/collections/maitres/12.html /vintage-posters/maitres/hardy-abbotts.html
+redirect 301 /vintage-posters/maitres/12.html /vintage-posters/maitres/hardy-abbotts.html
+redirect 301 /images/vintage-posters/collections/maitres/14.jpg /images/vintage-posters/maitres/hardy-abbotts.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg /images/vintage-posters/maitres/high-resolution/hardy-abbotts.jpg
+
+# 13.html -> choubrac-humber.html
+redirect 301 /vintage-posters/collections/maitres/13.html /vintage-posters/maitres/choubrac-humber.html
+redirect 301 /vintage-posters/maitres/13.html /vintage-posters/maitres/choubrac-humber.html
+redirect 301 /images/vintage-posters/collections/maitres/13.jpg /images/vintage-posters/maitres/choubrac-humber.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/13.jpg /images/vintage-posters/maitres/high-resolution/choubrac-humber.jpg
+
+#== Reed :: Traumerei
 redirect 301 /vintage-posters/collections/maitres/14.html /vintage-posters/maitres/reed-traumerei.html
+redirect 301 /vintage-posters/maitres/14.html /vintage-posters/maitres/reed-traumerei.html
 redirect 301 /images/vintage-posters/collections/maitres/14.jpg /images/vintage-posters/maitres/reed-traumerei.jpg 
 redirect 301 /images/vintage-posters/collections/maitres/high-resolution/14.jpg /images/vintage-posters/maitres/high-resolution/reed-traumerei.jpg
+
+# 15.html -> woodbury-century.html
+redirect 301 /vintage-posters/collections/maitres/15.html /vintage-posters/maitres/woodbury-century.html
+redirect 301 /vintage-posters/maitres/15.html /vintage-posters/maitres/woodbury-century.html
+redirect 301 /images/vintage-posters/collections/maitres/15.jpg /images/vintage-posters/maitres/woodbury-century.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/15.jpg /images/vintage-posters/maitres/high-resolution/woodbury-century.jpg
+
+# 16.html -> roedel-fallou.html
+redirect 301 /vintage-posters/collections/maitres/16.html /vintage-posters/maitres/roedel-fallou.html
+redirect 301 /vintage-posters/maitres/16.html /vintage-posters/maitres/roedel-fallou.html
+redirect 301 /images/vintage-posters/collections/maitres/16.jpg /images/vintage-posters/maitres/roedel-fallou.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/16.jpg /images/vintage-posters/maitres/high-resolution/roedel-fallou.jpg
+
+# 17.html -> forain-deuxieme.html
+redirect 301 /vintage-posters/collections/maitres/17.html /vintage-posters/maitres/forain-deuxieme.html
+redirect 301 /vintage-posters/maitres/17.html /vintage-posters/maitres/forain-deuxieme.html
+redirect 301 /images/vintage-posters/collections/maitres/17.jpg /images/vintage-posters/maitres/forain-deuxieme.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/17.jpg /images/vintage-posters/maitres/high-resolution/forain-deuxieme.jpg
+
+# 18.html -> cheret-gomme.html
+redirect 301 /vintage-posters/collections/maitres/18.html /vintage-posters/maitres/cheret-gomme.html
+redirect 301 /vintage-posters/maitres/18.html /vintage-posters/maitres/cheret-gomme.html
+redirect 301 /images/vintage-posters/collections/maitres/18.jpg /images/vintage-posters/maitres/cheret-gomme.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/18.jpg /images/vintage-posters/maitres/high-resolution/cheret-gomme.jpg
+
+# 19.html -> cheret-roussel.html
+redirect 301 /vintage-posters/collections/maitres/19.html /vintage-posters/maitres/cheret-roussel.html
+redirect 301 /vintage-posters/maitres/19.html /vintage-posters/maitres/cheret-roussel.html
+redirect 301 /images/vintage-posters/collections/maitres/19.jpg /images/vintage-posters/maitres/cheret-roussel.jpg 
+redirect 301 /images/vintage-posters/collections/maitres/high-resolution/19.jpg /images/vintage-posters/maitres/high-resolution/cheret-roussel.jpg
 
 #-----------------------------------------
 # Vintage Posters - Small Format
