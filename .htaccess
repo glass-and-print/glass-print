@@ -6,7 +6,7 @@ ErrorDocument 404 /errors/404.html
 #--------------------------------------------------------
 # REWRITES
 #
-RewriteEngine on
+#RewriteEngine on
 
 #--------------------------------------------------------
 # REDIRECTS
