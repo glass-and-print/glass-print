@@ -184,6 +184,23 @@
   padding: 0px 0px 0px 0px;
 }
 
+#seasons-greetings {
+  -x-system-font: none;
+  font-family: "Trebuchet MS",Verdana,sans-serif;
+  color: #228B22;
+  font-size: 18px;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-transform: none;
+}
+
 #news-flash {
   -x-system-font: none;
   font-family: "Trebuchet MS",Verdana,sans-serif;
@@ -193,7 +210,7 @@
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
-  font-weight: normal;
+  font-weight: bold;
   line-height: normal;
   list-style-image: none;
   list-style-position: outside;
