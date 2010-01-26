@@ -7,6 +7,15 @@
   table-layout: fixed;
 }
 
+.social-div {
+  position: fixed;
+  top: 70%;
+  left: 0%;
+  width: 48px;
+  height: 96px;
+  z-index: 100001;
+}
+
 /*.override #googlecart-arrow, */ 
 .override .googlecart-widget-disclaimer {
   display: none;
