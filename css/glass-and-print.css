@@ -258,3 +258,41 @@
   width: 100%;
 }
 
+.deal {
+  padding-top: 10px;
+}
+
+.deal div {
+  color: white;
+  background-color: #FF0040;
+  font-family: helvetica,arial,sans-serif;
+  text-align: center;
+  padding: 4px 0px 1px 0px;
+  hover: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 90px;
+  height: 16px;
+}
+
+.deal div:hover {
+  cursor: pointer;
+}
+
+.haggle-dialog {
+  font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
+  font-size: 12px;
+  color: purple;
+}
+
+.haggle-dialog-error {
+  font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
+  font-size: 12px;
+  color: red;
+}
+.haggle-dialog table * {
+  font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
+  font-size: 12px;
+  color: #007f7f;
+}
+
