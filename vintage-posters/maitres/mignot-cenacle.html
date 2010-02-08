@@ -69,6 +69,8 @@
                             + "</table>";
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
+        var lastEmail = "";
+        var lastOffer = "";
         dealDiv.click(
           function() {
             var haggleDialog = $("#haggle-div");
@@ -78,13 +80,15 @@
                                   modal: true,
                                   zIndex: 1000000,
                                   buttons: { "Send" : function() {
+                                                        lastEmail = $("#haggler-email").val();
+                                                        lastOffer = $("#haggler-offer").val();
                                                         $.ajax({
                                                                  type: 'POST',
                                                                  url: '/cgi-bin/deal.pl',
                                                                  data: { collection: collection,
                                                                          piece: piece,
-                                                                         email: $("#haggler-email").val(),
-                                                                         offer: $("#haggler-offer").val()},
+                                                                         email: lastEmail,
+                                                                         offer: lastOffer},
                                                                  dataType: 'html',
                                                                  success: function(data) {
                                                                    haggleDialog.html(data);
@@ -92,6 +96,8 @@
                                                                  },
                                                                  error: function(xhr, textStatus, errorThrown) {
                                                                    haggleDialog.html(xhr.responseText + haggleDivHtml);
+                                                                   $("#haggler-email").val(lastEmail);
+                                                                   $("#haggler-offer").val(lastOffer);
                                                                  }
                                                                });
                                                       }
