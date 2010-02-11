@@ -7,107 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link rel="shortcut icon" href="/images/glass-and-print.ico">
     <link href="/css/glass-and-print.css" rel="stylesheet" type="text/css">
-    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="/javascript/jquery.js"></script>
-    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
-    <script type="text/javascript">
-      //<![CDATA[
-      $(function() {
-        var collection = $("#collection-name").html().trim();
-        var piece = $("#piece-title").html().trim();
-        var haggleDivHtml =   "<table class=\"haggle-dialog\">"
-                            +   "<tr>"
-                            +     "<td>"
-                            +       "Make a deal with Glass & Print.<br/>It's easy!<br/>Choose the poster or vase you<br/>love and name your price.<br/>Send us your offer and we will<br/>email you back within a day."
-                            +     "</td>"
-                            +     "<td>"
-                            +       "<img src=\"/images/vert-pink.jpg\">"
-                            +     "</td>"
-                            +     "<td>"
-                            +       "<table>"
-                            +         "<tr>"
-                            +           "<td>"
-                            +             "<table>"
-                            +               "<tr>"
-                            +                 "<td>"
-                            +                   "Collection:"
-                            +                 "</td>"
-                            +                 "<td>"
-                            +                   collection
-                            +                 "</td>"
-                            +               "</tr>"
-                            +               "<tr>"
-                            +                 "<td>"
-                            +                   "Piece:"
-                            +                 "</td>"
-                            +                 "<td>"
-                            +                   piece
-                            +                 "</td>"
-                            +               "</tr>"
-                            +               "<tr>"
-                            +                 "<td>"
-                            +                   "Your email:"
-                            +                 "</td>"
-                            +                 "<td>"
-                            +                   "<input id=\"haggler-email\" type=\"text\" size=\"20\" maxsize=\"50\">"
-                            +                 "</td>"
-                            +               "</tr>"
-                            +               "<tr>"
-                            +                 "<td>"
-                            +                   "Your offer [US$]:"
-                            +                 "</td>"
-                            +                 "<td>"
-                            +                   "<input id=\"haggler-offer\" type=\"text\" size=\"20\" maxsize=\"50\">"
-                            +                 "</td>"
-                            +               "</tr>"
-                            +             "</table>"
-                            +           "</td>"
-                            +         "</tr>"
-                            +       "</table>"
-                            +     "</td>"
-                            +   "</tr>"
-                            + "</table>";
-        var dealDiv = $("#make-a-deal");
-        dealDiv.html("make a deal");
-        var lastEmail = "";
-        var lastOffer = "";
-        dealDiv.click(
-          function() {
-            var haggleDialog = $("#haggle-div");
-            haggleDialog.html(haggleDivHtml);
-            haggleDialog.dialog({
-                                  width: 480,
-                                  modal: true,
-                                  zIndex: 1000000,
-                                  buttons: { "Send" : function() {
-                                                        lastEmail = $("#haggler-email").val();
-                                                        lastOffer = $("#haggler-offer").val();
-                                                        $.ajax({
-                                                                 type: 'POST',
-                                                                 url: '/cgi-bin/deal.pl',
-                                                                 data: { collection: collection,
-                                                                         piece: piece,
-                                                                         email: lastEmail,
-                                                                         offer: lastOffer},
-                                                                 dataType: 'html',
-                                                                 success: function(data) {
-                                                                   haggleDialog.html(data);
-                                                                   haggleDialog.dialog('option', 'buttons', {});
-                                                                 },
-                                                                 error: function(xhr, textStatus, errorThrown) {
-                                                                   haggleDialog.html(xhr.responseText + haggleDivHtml);
-                                                                   $("#haggler-email").val(lastEmail);
-                                                                   $("#haggler-offer").val(lastOffer);
-                                                                 }
-                                                               });
-                                                      }
-                                           }
-                                }); 
-          }
-        );
-      });
-      //]]>
-    </script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -126,6 +25,20 @@
             highlight-time='3000'
             highlight-color='#FF83A0'
             currency='USD'>
+    </script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
+    <script type="text/javascript" src="/javascript/jaml.js"></script>
+    <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function() {
+        var dealDiv = $("#make-a-deal");
+        dealDiv.html("make a deal");
+        dealDiv.click(function() { dealListener(); });
+      });
+      //]]>
     </script>
   </head>
 

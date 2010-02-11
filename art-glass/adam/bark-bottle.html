@@ -26,6 +26,19 @@
             highlight-color='#FF83A0'
             currency='USD'>
     </script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
+    <script type="text/javascript" src="/javascript/jaml.js"></script>
+    <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var dealDiv = $("#make-a-deal");
+        dealDiv.html("make a deal");
+        dealDiv.click(function() { dealListener("product-attr-color"); });
+      });
+      //]]>
+    </script>
   </head>
 
   <body>
@@ -72,8 +85,8 @@
       <table id="content-table" align="center">
         <tbody>
           <tr>
-            <td width="65%" bgcolor="orange" align="left">
-              <font color="white">Adam Aaronson Bark</font>
+            <td id="collection-name" style="color: white;" width="65%" bgcolor="orange" align="left">
+              Adam Aaronson Bark
             </td>
             <td width="35%" align="right">
               <a href="/art-glass/adam.html"><font color="orange">&laquo;Back to Collections</font></a>
@@ -112,7 +125,12 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="padding-top: 5px">
+                        <td>
+                          Approx 18" tall
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
                           <div class="product">
                             <input value="Bark Bottle"
                                    class="product-title"
@@ -126,16 +144,7 @@
                             <table id="piece-description">
                               <tr>
                                 <td>
-                                  $220.00US
-                                </td>
-                                <td>
-                                  <img class="googlecart-add"
-                                       src="/images/cart.jpg">
-                                </td>
-                              </tr>
-                              <tr>
-                                <td colspan="2">
-                                  Color: 
+                                  Color:
                                   <select class="product-attr-color">
                                     <option value="Tangerine">Tangerine</option>
                                     <option value="Lilac">Lilac</option>
@@ -145,17 +154,22 @@
                                   </select>
                                 </td>
                               </tr>
+                              <tr>
+                                <td style="padding-top: 10px;">
+                                  $220.00US <img class="googlecart-add" src="/images/cart.jpg">
+                                </td>
+                              </tr>
                             </table>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="2">
-                          Approx 18" tall
+                        <td class="deal" style="padding-top: 5px">
+                          <div id="make-a-deal"></div>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="2" style="padding-top: 15px">
+                        <td style="padding-top: 15px">
                           Bark bottles are made in various colors and enhanced with pure silver leaf, which is textured to give a bark effect.
                         </td>
                       </tr>
@@ -193,6 +207,9 @@
 
   </body>
   
+  <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
   <div class="footer">
       &copy; 2007-2010 Glass and Print
   </div>
