@@ -4,19 +4,19 @@ function getTextFieldVal(textFieldId) {
     result = "";
   }
   else {
-    result = result.trim();
+    result = $.trim(result);
   }
   return result;
 }
 
 function getDealData(additionalAttrClass) {
-  return { collection: $("#collection-name").html().trim(),
-           piece: $(".product-title").val().trim()
-                  + (additionalAttrClass == undefined
-                     ? ""
-                     : (" [" + $("." + additionalAttrClass).val() + "]")),
-           email: getTextFieldVal("haggler-email"),
-           offer: getTextFieldVal("haggler-offer") };
+  return { collection: $.trim($("#collection-name").html()),
+           piece:      $.trim($(".product-title").val())
+                       + (additionalAttrClass == undefined
+                          ? ""
+                          : (" [" + $("." + additionalAttrClass).val() + "]")),
+           email:      getTextFieldVal("haggler-email"),
+           offer:      getTextFieldVal("haggler-offer") };
 }
 
 // FIXME -- if jaml.js does not appear before deal.js
