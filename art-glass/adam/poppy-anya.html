@@ -26,6 +26,20 @@
             highlight-color='#FF83A0'
             currency='USD'>
     </script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
+    <script type="text/javascript" src="/javascript/jaml.js"></script>
+    <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function() {
+        var dealDiv = $("#make-a-deal");
+        dealDiv.html("make a deal");
+        dealDiv.click(function() { dealListener("product-attr-size"); });
+      });
+      //]]>
+    </script>
   </head>
 
   <body>
@@ -72,8 +86,8 @@
       <table id="content-table" align="center">
         <tbody>
           <tr>
-            <td width="65%" bgcolor="orange" align="left">
-              <font color="white">Adam Aaronson Poppy</font>
+            <td id="collection-name" style="color: white;" width="65%" bgcolor="orange" align="left">
+              Adam Aaronson Poppy
             </td>
             <td width="35%" align="right">
               <a href="/art-glass/adam.html"><font color="orange">&laquo;Back to Collections</font></a>
@@ -138,6 +152,11 @@
                         </td>
                       </tr>
                       <tr>
+                        <td class="deal" style="padding-top: 5px">
+                          <div id="make-a-deal"></div>
+                        </td>
+                      </tr>
+                      <tr>
                         <td colspan="2" style="padding-top: 15px">
                           Poppy range vases are made from opaque glass colors, fired with pure silver leaf and overlaid with melted-in powdered and granulated glass colors to give a surface texture.
                         </td>
@@ -176,6 +195,9 @@
 
   </body>
   
+  <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
   <div class="footer">
       &copy; 2007-2010 Glass and Print
   </div>
