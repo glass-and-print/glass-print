@@ -68,7 +68,7 @@ function dealListener(additionalAttrClass) {
   haggleDialog.html(Jaml.render('make-a-deal', getDealData(additionalAttrClass)));
   haggleDialog.dialog({ width: 480,
                         modal: true,
-                        zIndex: 1000000,
+                        zIndex: 100000,
                         buttons: { "Send" : function() {
                                               $.ajax({ type: 'POST',
                                                        url: '/cgi-bin/deal.pl',
