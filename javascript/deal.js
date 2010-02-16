@@ -55,7 +55,7 @@ Jaml.register('make-a-deal', function(dealModel) {
                         type:    'text',
                         size:    '20',
                         maxsize: '50',
-                        value:   dealModel.offer}))
+                        value:   dealModel.offer }))
            )
          )
       )
@@ -64,12 +64,19 @@ Jaml.register('make-a-deal', function(dealModel) {
 });
 
 function dealListener(additionalAttrClass) {
-  var haggleDialog = $("#haggle-div");
+  var haggleDialog = $('#haggle-div');
   haggleDialog.html(Jaml.render('make-a-deal', getDealData(additionalAttrClass)));
-  haggleDialog.dialog({ width: 480,
-                        modal: true,
-                        zIndex: 1000000,
-                        buttons: { "Send" : function() {
+  haggleDialog.dialog({ width:   480,
+                        modal:   true,
+                        // this depends on the feedback and google cart divs having a zIndex
+                        // that is less than this [to avoid superimposing them on top of the
+                        // deal dialog]
+                        // Unfortunately google does not allow overriding the z-index property
+                        // which is 1e+06 and if we set the z-index property of this dialog to
+                        // more than a million the text inputs become unresponsive in Chrome
+                        // and Safari 
+                        //zIndex:  100000,
+                        buttons: { 'Send' : function() {
                                               $.ajax({ type: 'POST',
                                                        url: '/cgi-bin/deal.pl',
                                                        data: getDealData(additionalAttrClass),

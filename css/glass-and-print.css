@@ -258,25 +258,30 @@
   width: 100%;
 }
 
-.deal {
-  padding-top: 10px;
-}
-
 .deal div {
   color: white;
   background-color: #FF0040;
   font-family: helvetica,arial,sans-serif;
   text-align: center;
   padding: 4px 0px 1px 0px;
-  hover: pointer;
+  cursor: pointer;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   width: 90px;
   height: 16px;
 }
 
-.deal div:hover {
+.find div {
+  color: white;
+  background-color: #007F7F;
+  font-family: helvetica,arial,sans-serif;
+  text-align: center;
+  padding: 4px 0px 1px 0px;
   cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 104px;
+  height: 16px;
 }
 
 .haggle-dialog {
@@ -292,6 +297,7 @@
   margin: 0;
   padding: 0;
 }
+
 .haggle-dialog table * {
   font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
   font-size: 12px;
