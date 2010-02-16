@@ -75,7 +75,7 @@ function dealListener(additionalAttrClass) {
                         // which is 1e+06 and if we set the z-index property of this dialog to
                         // more than a million the text inputs become unresponsive in Chrome
                         // and Safari 
-                        //zIndex:  100000,
+                        //zIndex:  500000,
                         buttons: { 'Send' : function() {
                                               $.ajax({ type: 'POST',
                                                        url: '/cgi-bin/deal.pl',
