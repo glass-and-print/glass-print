@@ -3,6 +3,7 @@ Disallow: /images
 Disallow: /javascript
 Disallow: /errors
 Disallow: /support-scripts
+Disallow: /deals
 Disallow: /58_iSMghRfNAc.txt
 
 User-agent: ia_archiver
