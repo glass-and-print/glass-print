@@ -275,12 +275,13 @@
   color: orange;
   background-color: white;
   font-family: helvetica,arial,sans-serif;
+  font-size: 16px;
   text-align: center;
   padding: 4px 0px 1px 0px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   width: 120px;
-  height: 23px;
+  height: 24px;
 }
 
 .find div {
