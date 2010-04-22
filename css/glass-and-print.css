@@ -155,7 +155,7 @@
 }
 
 .content-wrapper table td {
-  padding: 8px 10px 5px;
+  padding: 4px 3px 3px 10px;
 }
 
 .content-wrapper a {
@@ -269,6 +269,19 @@
   -webkit-border-radius: 5px;
   width: 90px;
   height: 16px;
+}
+
+.singleViewNav div {
+  color: orange;
+  background-color: white;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 4px 0px 1px 0px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 120px;
+  height: 24px;
 }
 
 .find div {
