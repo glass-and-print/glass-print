@@ -158,6 +158,63 @@
   padding: 4px 3px 3px 10px;
 }
 
+table.all-pieces-frame td {
+  padding: 4px 3px 3px 10px;
+  vertical-align: top;
+}
+
+table.all-pieces {
+  border-style: dashed;
+  border-color: green;
+  border-width: 1px;
+  border-collapse: separate;
+  border-spacing: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+
+table.all-pieces-details {
+  border-style: none;
+}
+
+table.all-pieces td,
+table.all-pieces-details td {
+  padding-left: 3px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  vertical-align: top;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: none;
+  color: #0F3957;
+}
+
+table.all-pieces-details td.sold {
+  padding-left: 3px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 14px;
+  color: purple;
+  text-transform: uppercase;
+}
+
+table.all-pieces-details td.pricetag {
+  padding-left: 3px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 14px;
+  width: 40px;
+  color: #00BA02;
+}
+
 .content-wrapper a {
   color: white;
 }
