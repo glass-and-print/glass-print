@@ -27,13 +27,15 @@ function getDealData(options) {
       && additionalAttributes.length > 0) {
     pieceIdentity += " [";
     for (var i = 0; i < additionalAttributes.length; i++) {
-      if (i != 0) {
-        pieceIdentity += ",";
-      }
       var attributeSelector = options.id == undefined
                               ? ("." + additionalAttributes[i])
                               : ("#" + additionalAttributes[i] + "-" + options.id);
-      pieceIdentity += $(attributeSelector).val();
+      if ($(attributeSelector).val() != undefined) {
+        if (i != 0) {
+          pieceIdentity += ",";
+        }
+        pieceIdentity += $(attributeSelector).val();
+      }
     }
     pieceIdentity += "]";
   }
