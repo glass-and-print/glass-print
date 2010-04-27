@@ -26,6 +26,20 @@
             highlight-color='#FF83A0'
             currency='USD'>
     </script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
+    <script type="text/javascript" src="/javascript/jaml.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function() {
+        var findRequestDiv = $("#find-request");
+        findRequestDiv.html("ask us to find it");
+        findRequestDiv.click(function() { findRequestListener(); });
+      });
+      //]]>
+    </script>
   </head>
 
   <body>
@@ -69,15 +83,23 @@
     </div>
 
     <div id="content-wrapper" class="content-wrapper">
-      <table id="content-table" align="center">
+      <table width="100%" id="content-table" align="center">
         <tbody>
           <tr>
+
             <td width="65%" bgcolor="orange" align="left">
-              <font color="white">Small Format</font>
+              <a href="/vintage-posters/small-format.html"><font color="white">Collections</font></a><font color="white"> :: Small Format</font>
             </td>
             <td width="35%" align="right">
-              <a href="/vintage-posters/small-format.html"><font color="orange">&laquo;Back to Collections</font></a>
+              <a href="/vintage-posters/small-format/all.html#savignac-bicruns">
+                <img border="0" alt="" src="/images/multi-view.jpg"/>
+              </a>
+              <a href="/vintage-posters/small-format/all.html#savignac-bicruns">
+                <font style="font-weight: normal; text-transform: none;" color="orange">Multi View</font>
+              </a>
             </td>
+
+
           </tr>
           <tr>
             <td align="right">
@@ -118,7 +140,7 @@
                               <td>
                                 <font color="purple"><b>SOLD</b></font>
 <!--
-                                $40.00US
+                                $XX.XXUS
 -->
                               </td>
                               <td>
@@ -130,7 +152,7 @@
                                   <input value="/images/vintage-posters/small-format/savignac-bicruns.jpg"
                                          class="product-image"
                                          type="hidden">
-                                  <input value="40.00"
+                                  <input value="XX.XX"
                                          class="product-price"
                                          type="hidden">
                                   <img class="googlecart-add"
@@ -140,6 +162,13 @@
                               </td>
                             </tr>
                           </table>
+                        </td>
+                      </tr>
+                      <input type="hidden" id="collection-name" value="Small Format" />
+                      <input type="hidden" id="product-title" class="product-title" value="La Pointe Bic" />
+                      <tr>
+                        <td class="find" style="padding-top: 5px">
+                          <div id="find-request"></div>
                         </td>
                       </tr>
                       <tr>
@@ -190,9 +219,11 @@
       </div>
     </div>
 
-
   </body>
   
+  <div id="request-div" title="Let Us Find It For You!">
+  </div>
+
   <div class="footer">
       &copy; 2007-2010 Glass and Print
   </div>

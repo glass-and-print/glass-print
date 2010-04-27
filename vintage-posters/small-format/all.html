@@ -26,6 +26,33 @@
             highlight-color='#FF83A0'
             currency='USD'>
     </script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
+    <script type="text/javascript" src="/javascript/jaml.js"></script>
+    <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function() {
+        $(".find-request").click(
+          function() {
+            findRequestListener({ id                   : $(this).attr('id'),
+                                  additionalAttributes : undefined });
+          }
+        );
+      });
+
+      $(function() {
+        $(".make-a-deal").click(
+          function() {
+            dealListener({ id                   : $(this).attr('id'),
+                           additionalAttributes : undefined });
+          }
+        );
+      });
+      //]]>
+    </script>
   </head>
 
   <body>
@@ -73,8 +100,9 @@
       <table width="100%" cellspacing="0" id="content-table" align="center">
         <tr>
           <td width="80%" bgcolor="orange">
-            <a href="/vintage-posters/collections.html"><font color="white">Collections</font></a><font color="white"> :: Small Format</font>
+            <a href="/vintage-posters/collections.html#small-format"><font color="white">Collections</font></a><font color="white"> :: Small Format</font>
           </td>
+          <input type="hidden" id="collection-name" value="Small Format"></input>
           <td width="20%" bgcolor="orange" align="right" class="singleViewNav">
             <div>
               <a href="/vintage-posters/small-format/savignac-bicflex.html">
@@ -87,75 +115,201 @@
           </td>
         </tr>
         <tr>
-          <td align="center" colspan="2">
-            <table>
+          <td colspan="2">
+            <table class="all-pieces-frame">
               <tr>
-                <td valign="top">
-                  <table width="100%">
+                <td>
+                  <a name="morvan-sauce" />
+                  <table class="all-pieces">
                     <tr>
-                      <td align="right" valign="top">
-                        <a href="/vintage-posters/small-format/savignac-bicflex.html"><img border="0" alt="" src="/images/vintage-posters/small-format/thumbs/savignac-bicflex.jpg"></a>
+                      <td>
+                        <a href="/vintage-posters/small-format/morvan-sauce.html"><img border="0" title="Click for a Detailed View" src="/images/vintage-posters/small-format/thumbs/morvan-sauce.jpg"></a>
                       </td>
-                      <td align="left" valign="top">
-                        <table cellpadding="0">
+                      <td>
+                        <table class="all-pieces-details">
+                          <tr><td colspan="2">Panzani Pasta Sauce</td></tr>
                           <tr>
-                            <td align="left">
-                              <font style="font-weight: normal; font-size: 14px; text-transform: none;" color="0f3957">Bic Ecripture Souple</font>
+                            <td class="pricetag">
+                              $100.00US
+                            </td>
+                            <td>
+                              <div class="product">
+                                <input value="Panzani Pasta Sauce"
+                                       class="product-title"
+                                       id="product-title-1"
+                                       type="hidden">
+                                <input value="/images/vintage-posters/small-format/morvan-sauce.jpg"
+                                       class="product-image"
+                                       type="hidden">
+                                <input value="100.00"
+                                       class="product-price"
+                                       type="hidden">
+                                <img class="googlecart-add" title="Add to Cart" src="/images/cart-all.jpg"/> 
+                              </div>
                             </td>
                           </tr>
-                          <tr>
-                            <td align="left">
-                              <font style="font-size: 14px" color="purple">Sold</font>
-                            </td>
-                          </tr>
+                          <tr><td class="deal" colspan="2"><div class="make-a-deal" id="1">make a deal</div></td></tr>
+                          <tr><td colspan="2">Herve Morvan, French, (1917-1980)</td></tr>
+                          <tr><td colspan="2">Condition A- (slight edge folds)</td></tr>
+                          <tr><td colspan="2">Mini advertising poster on blotting paper</td></tr>
+                          <tr><td colspan="2">Circa 1950</td></tr>
+                          <tr><td colspan="2">8.3 in x 5.5 in</td></tr>
                         </table>
                       </td>
                     </tr>
                   </table>
                 </td>
-                <td valign="top">
-                  <table>
+                <td>
+                  <a name="cappiello-umbrellas" />
+                  <table class="all-pieces">
                     <tr>
-                      <td valign="top">
-                        <a href="/vintage-posters/small-format/index.html"><img border="0" alt="" src="/images/vintage-posters/small-format/thumbs/collection.jpg"></a>
+                      <td>
+                        <a href="/vintage-posters/small-format/cappiello-umbrellas.html"><img border="0" alt="" src="/images/vintage-posters/small-format/thumbs/cappiello-umbrellas.jpg"></a>
                       </td>
-                      <td valign="top">
-                        <a href="/vintage-posters/small-format/index.html"><font style="font-size: 14px; text-transform: none;" color="0f3957">Small Format</font></a><br />
-                        <font style="font-weight: normal; font-size: 14px; text-transform: none;" color="0f3957">During the 1950's and 60's in France small advertising posters were printed and distributed to offices, schools, stores, and bars to promote products. These small pieces are well preserved and have the same quality of graphic design and range as their larger counterparts. Small size, big impact!</font>
+                      <td>
+                        <table class="all-pieces-details">
+                          <tr><td colspan="2">Parapluie-Revel</td></tr>
+                          <tr>
+                            <td class="pricetag">$50.00US</td>
+                            <td>
+                              <div class="product">
+                                <input value="Parapluie-Revel"
+                                       class="product-title"
+                                       id="product-title-2"
+                                       type="hidden">
+                                <input value="/images/vintage-posters/small-format/cappiello-umbrellas.jpg"
+                                       class="product-image"
+                                       type="hidden">
+                                <input value="50.00"
+                                       class="product-price"
+                                       type="hidden">
+                                <img class="googlecart-add" src="/images/cart-all.jpg"/> 
+                              </div>
+                            </td>
+                          </tr>
+                          <tr><td class="deal" colspan="2"><div class="make-a-deal" id="2">make a deal</div></td></tr>
+                          <tr><td colspan="2">Leonetto Cappiello, Italian, (1875-1942)</td></tr>
+                          <tr><td colspan="2">Condition A</td></tr>
+                          <tr><td colspan="2">Mini advertising poster; point of purchase display</td></tr>
+                          <tr><td colspan="2">Circa 1922</td></tr>
+                          <tr><td colspan="2">4.7 in x 7.5 in</td></tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
                 </td>
-                <td/>
               </tr>
               <tr>
-                <td valign="top">
-                  <table>
+                <td>
+                  <a name="morvan-pasta" />
+                  <table class="all-pieces">
                     <tr>
-                      <td valign="top">
-                        <a href="/vintage-posters/modern/index.html"><img border="0" alt="" src="/images/vintage-posters/modern/thumbs/collection.jpg"></a>
+                      <td>
+                        <a href="/vintage-posters/small-format/morvan-pasta.html"><img border="0" alt="" src="/images/vintage-posters/small-format/thumbs/morvan-pasta.jpg"></a>
                       </td>
-                      <td valign="top">
-                        <a href="/vintage-posters/modern/index.html"><font style="font-size: 14px; text-transform: none;" color="0f3957">Modern</font></a><br />
-                        <font style="font-weight: normal; font-size: 14px; text-transform: none;" color="0f3957">Modern poster advertising alerted the public to art exhibitions, fashion shows,  national and international expos. Make a bold statement with a modern poster.</font>
+                      <td>
+                        <table class="all-pieces-details">
+                          <tr><td colspan="2">Panzani Pasta</td></tr>
+                          <tr>
+                            <td class="pricetag">$80.00US</td>
+                            <td>
+                              <div class="product">
+                                <input value="Panzani Pasta"
+                                       class="product-title"
+                                       id="product-title-3"
+                                       type="hidden">
+                                <input value="/images/vintage-posters/small-format/morvan-pasta.jpg"
+                                       class="product-image"
+                                       type="hidden">
+                                <input value="80.00"
+                                       class="product-price"
+                                       type="hidden">
+                                <img class="googlecart-add" src="/images/cart-all.jpg"/> 
+                              </div>
+                            </td>
+                          </tr>
+                          <tr><td class="deal" colspan="2"><div class="make-a-deal" id="3">make a deal</div></td></tr>
+                          <tr><td colspan="2">Herve Morvan, French, (1917-1980)</td></tr>
+                          <tr><td colspan="2">Condition A</td></tr>
+                          <tr><td colspan="2">Mini advertising poster on blotting paper</td></tr>
+                          <tr><td colspan="2">Circa 1950</td></tr>
+                          <tr><td colspan="2">5.5 in x 8.3 in</td></tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
                 </td>
-                <td valign="top">
-                  <table>
+                <td>
+                  <a name="savignac-bicruns" />
+                  <table class="all-pieces">
                     <tr>
-                      <td valign="top">
-                        <a href="/vintage-posters/contemporary/index.html"><img border="0" alt="" src="/images/vintage-posters/contemporary/thumbs/collection.jpg"></a>
+                      <td>
+                        <a href="/vintage-posters/small-format/savignac-bicruns.html"><img border="0" alt="" src="/images/vintage-posters/small-format/thumbs/savignac-bicruns.jpg"></a>
                       </td>
-                      <td valign="top">
-                        <a href="/vintage-posters/contemporary/index.html"><font style="font-size: 14px; text-transform: none;" color="0f3957">Contemporary</font></a><br />
-                        <font style="font-weight: normal; font-size: 14px; text-transform: none;" color="0f3957">Tired of bananas, oranges, pinks and birds? Choose a contemporary poster. Any given poster wants to bring a message to our notice, to publicize products, invite us to entertainments or advertise campaigns. It can inform, stimulate, activate, mobilize, expound, query, provoke, motivate or convince - or all of these things. The task of the poster should not, however, be limited to mere...</font>
+                      <td>
+                        <table class="all-pieces-details">
+                          <tr><td>La Pointe Bic</td></tr>
+                          <tr><td class="sold">Sold</td></tr>
+                          <input type="hidden" id="product-title-4" value="La Pointe Bic">
+                          <tr><td class="find" colspan="2"><div class="find-request" id="4">ask us to find it</div></td></tr>
+                          <tr><td>Raymond Savignac, French, (1907-2002)</td></tr>
+                          <tr><td>Condition A- (slight edge fold)</td></tr>
+                          <tr><td>Mini advertising poster on blotting paper</td></tr>
+                          <tr><td>Circa 1951</td></tr>
+                          <tr><td>8.3 in x 5.5 in</td></tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
                 </td>
-                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="savignac-bicflex" />
+                  <table class="all-pieces">
+                    <tr>
+                      <td>
+                        <a href="/vintage-posters/small-format/savignac-bicflex.html"><img border="0" alt="" src="/images/vintage-posters/small-format/thumbs/savignac-bicflex.jpg"></a>
+                      </td>
+                      <td>
+                        <table class="all-pieces-details">
+                          <tr><td>Bic Ecripture Souple</td></tr>
+                          <tr><td class="sold">Sold</td></tr>
+                          <input type="hidden" id="product-title-5" value="Bic Ecripture Souple">
+                          <tr><td class="find" colspan="2"><div class="find-request" id="5">ask us to find it</div></td></tr>
+                          <tr><td>Raymond Savignac, French, (1907-2002)</td></tr>
+                          <tr><td>Condition A</td></tr>
+                          <tr><td>Mini advertising poster on blotting paper</td></tr>
+                          <tr><td>Circa 1956</td></tr>
+                          <tr><td>5.5 in x 8.3 in</td></tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <a name="ravo-radiola" />
+                  <table class="all-pieces">
+                    <tr>
+                      <td>
+                        <a href="/vintage-posters/small-format/ravo-radiola.html"><img border="0" alt="" src="/images/vintage-posters/small-format/thumbs/ravo-radiola.jpg"></a>
+                      </td>
+                      <td>
+                        <table class="all-pieces-details">
+                          <tr><td>Radiola Parrot</td></tr>
+                          <tr><td class="sold">Sold</td></tr>
+                          <input type="hidden" id="product-title-6" value="Radiola Parrot">
+                          <tr><td class="find" colspan="2"><div class="find-request" id="6">ask us to find it</div></td></tr>
+                          <tr><td>Rene Ravo, French, (Born 1904)</td></tr>
+                          <tr><td>Condition A- (slight paper loss on the edges</td></tr>
+                          <tr><td>Mini advertising poster on blotting paper</td></tr>
+                          <tr><td>Circa 1951</td></tr>
+                          <tr><td>8.3 in x 5.5 in</td></tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
               </tr>
             </table>
           </td>
@@ -176,8 +330,13 @@
       </div>
     </div>
 
-
   </body>
+
+  <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
+  <div id="request-div" title="Let Us Find It For You!">
+  </div>
 
   <footer>
     <div class="footer">
