@@ -74,7 +74,7 @@ Jaml.register('make-a-deal', function(dealModel) {
              td('Your email:'),
              td(input({ id:      'haggler-email',
                         type:    'text',
-                        size:    '20',
+                        size:    '28',
                         maxsize: '50',
                         value:   dealModel.email }))
            ),
@@ -82,7 +82,7 @@ Jaml.register('make-a-deal', function(dealModel) {
              td('Your offer [US$]:'),
              td(input({ id:      'haggler-offer',
                         type:    'text',
-                        size:    '20',
+                        size:    '28',
                         maxsize: '50',
                         value:   dealModel.offer }))
            )
@@ -95,7 +95,7 @@ Jaml.register('make-a-deal', function(dealModel) {
 function dealListener(options) {
   var haggleDialog = $('#haggle-div');
   haggleDialog.html(Jaml.render('make-a-deal', getDealData(options)));
-  haggleDialog.dialog({ width:   480,
+  haggleDialog.dialog({ width:   520,
                         modal:   true,
                         // this depends on the feedback and google cart divs having a zIndex
                         // that is less than this [to avoid superimposing them on top of the
