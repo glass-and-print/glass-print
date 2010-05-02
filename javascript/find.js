@@ -66,7 +66,7 @@ Jaml.register('find-request', function(findModel) {
              td('Your email:'),
              td(input({ id:      'user-email',
                         type:    'text',
-                        size:    '20',
+                        size:    '37',
                         maxsize: '50',
                         value:   findModel.email }))
            )
@@ -79,7 +79,7 @@ Jaml.register('find-request', function(findModel) {
 function findRequestListener(options) {
   var requestDialog = $("#request-div");
   requestDialog.html(Jaml.render('find-request', getFindRequestData(options)));
-  requestDialog.dialog({ width: 420,
+  requestDialog.dialog({ width: 520,
                          modal: true,
                          buttons: { "Send" : function() {
                                                $.ajax({ type: 'POST',
