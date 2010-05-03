@@ -33,7 +33,9 @@ function getFindRequestData(options) {
       var attributeSelector = options['id'] == undefined
                               ? ("." + additionalAttributes[i])
                               : ("#" + additionalAttributes[i] + "-" + options['id']);
-      pieceIdentity += $(attributeSelector).val();
+      if ($(attributeSelector).val() != undefined) {
+        pieceIdentity += $(attributeSelector).val();
+      }
     }
     pieceIdentity += "]";
   }

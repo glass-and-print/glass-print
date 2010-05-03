@@ -36,7 +36,11 @@
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
-        dealDiv.click(function() { dealListener("product-attr-size"); });
+        dealDiv.click(
+          function() {
+            dealListener({ additionalAttributes : ['product-attr-color','product-attr-size'] });
+          }
+        );
       });
       //]]>
     </script>
