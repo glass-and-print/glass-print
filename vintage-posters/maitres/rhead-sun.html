@@ -26,6 +26,20 @@
             highlight-color='#FF83A0'
             currency='USD'>
     </script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
+    <script type="text/javascript" src="/javascript/jaml.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function() {
+        var findRequestDiv = $("#find-request");
+        findRequestDiv.html("ask us to find it");
+        findRequestDiv.click(function() { findRequestListener(); });
+      });
+      //]]>
+    </script>
   </head>
 
   <body>
@@ -55,10 +69,10 @@
               <a href="/index.html">Home</a>
             </td>
             <td class="active" align="center">
-              <a href="/vintage-posters/maitres.html">Vintage Posters</a>
+              <a href="/vintage-posters/collections.html">Vintage Posters</a>
             </td>
             <td align="center">
-              <a href="/art-glass/penny.html">Art Glass</a>
+              <a href="/art-glass/collections.html">Art Glass</a>
             </td>
             <td align="center">
               <a href="/about-us.html">About</a>
@@ -69,30 +83,35 @@
     </div>
 
     <div id="content-wrapper" class="content-wrapper">
-      <table id="content-table" align="center">
+      <table width="100%" id="content-table" align="center">
         <tbody>
           <tr>
-            <td width="65%" bgcolor="orange" align="left">
+            <td width="65%" id="collection-name" bgcolor="orange" align="left">
               <font color="white">Les Maitres de l'Affiche</font>
             </td>
             <td width="35%" align="right">
-              <a href="/vintage-posters/maitres.html"><font color="orange">&laquo;Back to Collections</font></a>
+              <a href="/vintage-posters/maitres/all.html#rhead-sun">
+                <img border="0" alt="" src="/images/multi-view.jpg"/>
+              </a>
+              <a href="/vintage-posters/maitres/all.html#rhead-sun">
+                <font style="font-weight: normal; text-transform: none;" color="orange">Multi View</font>
+              </a>
             </td>
           </tr>
           <tr>
-            <td align="right">
+            <td align="center">
               <table>
                 <tbody>
                   <tr>
-                    <td width="10%">
+                    <td align="right" width="10%">
                       <a href="/vintage-posters/maitres/cheret-music.html">
                         <img border="0" alt="" src="/images/left-arrow.gif"/>
                       </a>
                     </td>
-                    <td width="80%">
+                    <td align="center" width="80%">
                       <input type=image src="/images/vintage-posters/maitres/rhead-sun.jpg" onclick="window.open('/images/vintage-posters/maitres/high-resolution/rhead-sun.jpg','Sun','resizable=yes,menubar=no,toolbar=no,status=no,location=no,titlebar=no,scrollbars=yes,width=540,height=720')"/>
                     </td>
-                    <td width="10%">
+                    <td align="left" width="10%">
                       <a href="/vintage-posters/maitres/12.html">
                         <img border="0" alt="" src="/images/right-arrow.gif"/>
                       </a>
@@ -117,29 +136,29 @@
                             <tr>
                               <td>
                                 <font color="purple"><b>SOLD</b></font>
-                                <!--
-                                $270.00US
-                                -->
                               </td>
                               <td>
-                                <!--
-                                <div class="product">
-                                  <input value="The Sun"
+                                <div style="display:none;" class="product">
+                                  <input value="The Sun (PL. 8)"
                                          class="product-title"
                                          type="hidden">
                                   <input value="/images/vintage-posters/maitres/rhead-sun.jpg"
                                          class="product-image"
                                          type="hidden">
-                                  <input value="270.00"
+                                  <input value="xxx.xx"
                                          class="product-price"
                                          type="hidden">
                                   <img class="googlecart-add"
                                        src="/images/cart.jpg"/> 
                                 </div>
-                                -->
                               </td>
                             </tr>
                           </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="find">
+                          <div id="find-request"></div>
                         </td>
                       </tr>
                       <tr>
@@ -196,8 +215,10 @@
       </div>
     </div>
 
-
   </body>
+
+  <div id="request-div" title="Let Us Find It For You!">
+  </div>
 
   <footer>
     <div class="footer">

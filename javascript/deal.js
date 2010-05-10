@@ -1,3 +1,5 @@
+// TODO unit test 
+
 function getTextFieldVal(textFieldId) {
   var result = $("#" + textFieldId).val();
   if (result == undefined) {
@@ -9,14 +11,41 @@ function getTextFieldVal(textFieldId) {
   return result;
 }
 
-function getDealData(additionalAttrClass) {
-  return { collection: $.trim($("#collection-name").html()),
-           piece:      $.trim($(".product-title").val())
-                       + (additionalAttrClass == undefined
-                          ? ""
-                          : (" [" + $("." + additionalAttrClass).val() + "]")),
-           email:      getTextFieldVal("haggler-email"),
-           offer:      getTextFieldVal("haggler-offer") };
+function getDealData(options) {
+  var pieceIdentity = undefined;
+  if (options == undefined || options.id == undefined) {
+    pieceIdentity = $.trim($(".product-title").val());
+  }
+  else {
+    pieceIdentity = $.trim($("#product-title-" + options.id).val());
+  }
+
+  var additionalAttributes = options == undefined || options.additionalAttributes == undefined
+                             ? undefined
+                             : options.additionalAttributes;
+  if (additionalAttributes != undefined
+      && additionalAttributes.length > 0) {
+    pieceIdentity += " [";
+    for (var i = 0; i < additionalAttributes.length; i++) {
+      var attributeSelector = options.id == undefined
+                              ? ("." + additionalAttributes[i])
+                              : ("#" + additionalAttributes[i] + "-" + options.id);
+      if ($(attributeSelector).val() != undefined) {
+        if (i != 0) {
+          pieceIdentity += ",";
+        }
+        pieceIdentity += $(attributeSelector).val();
+      }
+    }
+    pieceIdentity += "]";
+  }
+
+  var collectionName = $.trim($("#collection-name").html())
+                       || $.trim($("#collection-name").attr('value'));
+  return { collection : collectionName,
+           piece      : pieceIdentity,
+           email      : getTextFieldVal("haggler-email"),
+           offer      : getTextFieldVal("haggler-offer") };
 }
 
 // FIXME -- if jaml.js does not appear before deal.js
@@ -45,7 +74,7 @@ Jaml.register('make-a-deal', function(dealModel) {
              td('Your email:'),
              td(input({ id:      'haggler-email',
                         type:    'text',
-                        size:    '20',
+                        size:    '28',
                         maxsize: '50',
                         value:   dealModel.email }))
            ),
@@ -53,7 +82,7 @@ Jaml.register('make-a-deal', function(dealModel) {
              td('Your offer [US$]:'),
              td(input({ id:      'haggler-offer',
                         type:    'text',
-                        size:    '20',
+                        size:    '28',
                         maxsize: '50',
                         value:   dealModel.offer }))
            )
@@ -63,10 +92,10 @@ Jaml.register('make-a-deal', function(dealModel) {
   );
 });
 
-function dealListener(additionalAttrClass) {
+function dealListener(options) {
   var haggleDialog = $('#haggle-div');
-  haggleDialog.html(Jaml.render('make-a-deal', getDealData(additionalAttrClass)));
-  haggleDialog.dialog({ width:   480,
+  haggleDialog.html(Jaml.render('make-a-deal', getDealData(options)));
+  haggleDialog.dialog({ width:   520,
                         modal:   true,
                         // this depends on the feedback and google cart divs having a zIndex
                         // that is less than this [to avoid superimposing them on top of the
@@ -79,7 +108,7 @@ function dealListener(additionalAttrClass) {
                         buttons: { 'Send' : function() {
                                               $.ajax({ type: 'POST',
                                                        url: '/cgi-bin/deal.pl',
-                                                       data: getDealData(additionalAttrClass),
+                                                       data: getDealData(options),
                                                        dataType: 'html',
                                                        success: function(data) {
                                                          haggleDialog.html(data);
@@ -88,7 +117,7 @@ function dealListener(additionalAttrClass) {
                                                        error: function(xhr, textStatus, errorThrown) {
                                                          haggleDialog.html(xhr.responseText
                                                                            + Jaml.render('make-a-deal',
-                                                                                         getDealData(additionalAttrClass)));
+                                                                                         getDealData(options)));
                                                        }
                                                      });
                                             }

@@ -37,7 +37,11 @@
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
-        dealDiv.click(function() { dealListener("product-attr-color"); });
+        dealDiv.click(
+          function() {
+            dealListener( { additionalAttributes: ["product-attr-color"] });
+          }
+        );
       });
       //]]>
     </script>
@@ -70,10 +74,10 @@
               <a href="/index.html">Home</a>
             </td>
             <td align="center">
-              <a href="/vintage-posters/maitres.html">Vintage Posters</a>
+              <a href="/vintage-posters/collections.html">Vintage Posters</a>
             </td>
             <td class="active" align="center">
-              <a href="/art-glass/penny.html">Art Glass</a>
+              <a href="/art-glass/collections.html">Art Glass</a>
             </td>
             <td align="center">
               <a href="/about-us.html">About</a>
@@ -84,27 +88,32 @@
     </div>
 
     <div id="content-wrapper" class="content-wrapper">
-      <table id="content-table" align="center">
+      <table width="100%" id="content-table" align="center">
         <tbody>
           <tr>
-            <td id="collection-name" style="color: white;" width="65%" bgcolor="orange" align="left">
-              Penelope Wurr Glass
+            <td width="65%" bgcolor="orange" align="left">
+              <a href="/art-glass/penny.html"><font color="white">Collections</font></a><font color="white"> :: Penelope Wurr Glass</font>
             </td>
             <td width="35%" align="right">
-              <a href="/art-glass/penny.html"><font color="orange">&laquo;Back to Collections</font></a>
+              <a href="/art-glass/penny/all.html#hula">
+                <img border="0" alt="Go to Multi View" src="/images/multi-view.jpg"/>
+              </a>
+              <a href="/art-glass/penny/all.html#hula">
+                <font style="font-weight: normal; text-transform: none;" color="orange">Multi View</font>
+              </a>
             </td>
           </tr>
           <tr>
-            <td align="right">
+            <td align="center">
               <table>
                 <tbody>
                   <tr>
-                    <td width="10%">
+                    <td align="right" width="10%">
                     </td>
-                    <td width="80%">
+                    <td align="center" width="80%">
                       <img border="0" alt="" src="/images/art-glass/penny/hula.jpg"/>
                     </td>
-                    <td width="10%">
+                    <td align="left" width="10%">
                       <a href="/art-glass/penny/hula-feather.html">
                         <img border="0" alt="" src="/images/right-arrow.gif"/>
                       </a>
@@ -159,8 +168,9 @@
                           </div>
                         </td>
                       </tr>
+                      <input type="hidden" id="collection-name" value="Penelope Wurr Glass" />
                       <tr>
-                        <td class="deal" style="padding-top: 5px">
+                        <td class="deal">
                           <div id="make-a-deal"></div>
                         </td>
                       </tr>
