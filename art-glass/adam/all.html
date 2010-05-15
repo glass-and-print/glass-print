@@ -38,7 +38,7 @@
         $(".find-request").click(
           function() {
             findRequestListener({ id                   : $(this).attr('id'),
-                                  additionalAttributes : undefined });
+                                  additionalAttributes : ['product-attr-color','product-attr-size'] });
           }
         );
       });
@@ -127,23 +127,24 @@
                       </td>
                       <td>
                         <table class="all-pieces-details">
-                          <tr><td colspan="2">Norina Handblown Glass Bowl</td></tr>
+                          <tr><td colspan="2">Norina Handblown Glass Vase</td></tr>
                           <tr><td colspan="2">[Raspberry Poppy]</td></tr>
                           <tr><td colspan="2">5" tall, 4.5" wide (medium)</td></tr>
-                          <tr>
+                          <tr><td colspan="2" style="padding-top: 7px;" class="sold">Sold</td></tr>
+                          <tr style="display: none;">
                             <td style="padding-top: 7px;" class="pricetag">
-                              $230.00US
+                              $xxx.xxUS
                             </td>
                             <td style="padding-top: 7px;">
                               <div class="product">
-                                <input value="Norina Bowl"
+                                <input value="Norina Vase Poppy"
                                        class="product-title"
                                        id="product-title-1"
                                        type="hidden">
                                 <input value="/images/art-glass/adam/poppy-norina.jpg"
                                        class="product-image"
                                        type="hidden">
-                                <input value="230.00"
+                                <input value="xxx.xx"
                                        class="product-price"
                                        type="hidden">
                                 <input value="Raspberry"
@@ -158,11 +159,7 @@
                               </div>
                             </td>
                           </tr>
-                          <tr>
-                            <td colspan="2" class="deal" style="padding-bottom: 9px">
-                              <div id="1" class="make-a-deal">make a deal</div>
-                            </td>
-                          </tr>
+                          <tr><td class="find" style="padding-bottom: 9px;" colspan="2"><div class="find-request" id="1">ask us to find it</div></td></tr>
                           <tr><td colspan="2">Poppy range vases are made from opaque glass colors, fired with pure silver leaf and overlaid with melted-in powdered and granulated glass colors to give a surface texture.</td></tr>
                         </table>
                       </td>
@@ -197,10 +194,10 @@
                                     <td colspan="2">Color:
                                       <select class="product-attr-color"
                                               id="product-attr-color-2">
-                                        <option disabled="disabled" value="Tangerine">Tangerine (Sold)</option>
+                                        <option disabled="disabled" value="Tangerine">Tangerine [SOLD]</option>
                                         <option value="Lilac">Lilac</option>
-                                        <option disabled="disabled" value="Oasis">Oasis (Sold)</option>
-                                        <option disabled="disabled" value="Saffron">Saffron (Sold)</option>
+                                        <option disabled="disabled" value="Oasis">Oasis [SOLD]</option>
+                                        <option disabled="disabled" value="Saffron">Saffron [SOLD]</option>
                                         <option value="Ocean">Ocean</option>
                                       </select>
                                     </td>
