@@ -15,20 +15,38 @@
     <script type="text/javascript">
       //<![CDATA[
       $(function() { 
-        var imageHtmlStart = "<img border='0' alt='' src='";
-        var imageHtmlEnd = "'/>";
-        var imageSrc = "images/home-anime/0.jpg";
-        var imageHtml = imageHtmlStart + imageSrc + imageHtmlEnd;
-        var imageDiv = $("#home-anime");
-        imageDiv.html(imageHtml);
-        imageDiv.everyTime("10s", function(i) {
-          if (i > 18) {
-            i = i % 19;
+        var posterImageHtmlStart = "<a href='/vintage-posters/collections.html'><img border='0' alt='' src='";
+        var posterImageHtmlEnd = "'/></a>";
+        var posterImageSrc = "/images/poster-anime/0.jpg";
+        var posterImageHtml = posterImageHtmlStart + posterImageSrc + posterImageHtmlEnd;
+        var posterImageDiv = $("#poster-anime");
+        posterImageDiv.html(posterImageHtml);
+        posterImageDiv.everyTime("8s", function(i) {
+          if (i > 3) {
+            i = i % 4;
           }
-          imageSrc = "images/home-anime/" + i + ".jpg";
-          imageHtml = imageHtmlStart + imageSrc + imageHtmlEnd;
+          posterImageSrc = "/images/poster-anime/" + i + ".jpg";
+          posterImageHtml = posterImageHtmlStart + posterImageSrc + posterImageHtmlEnd;
           $(this).fadeOut(1000, function() {
-            $(this).html(imageHtml);
+            $(this).html(posterImageHtml);
+            $(this).fadeIn(1000);
+          });
+        });
+
+        var glassImageHtmlStart = "<a href='/art-glass/collections.html'><img border='0' alt='' src='";
+        var glassImageHtmlEnd = "'/></a>";
+        var glassImageSrc = "/images/glass-anime/0.jpg";
+        var glassImageHtml = glassImageHtmlStart + glassImageSrc + glassImageHtmlEnd;
+        var glassImageDiv = $("#glass-anime");
+        glassImageDiv.html(glassImageHtml);
+        glassImageDiv.everyTime("12s", function(i) {
+          if (i > 2) {
+            i = i % 3;
+          }
+          glassImageSrc = "/images/glass-anime/" + i + ".jpg";
+          glassImageHtml = glassImageHtmlStart + glassImageSrc + glassImageHtmlEnd;
+          $(this).fadeOut(1000, function() {
+            $(this).html(glassImageHtml);
             $(this).fadeIn(1000);
           });
         });
@@ -63,68 +81,90 @@
 
     <div id="header-div" class="header-div">
       <table id="header-table" class="header-table">
-        <tbody>
-          <tr>
-            <td align="center"> 
-              <a href="/index.html">
-                <img id="logo-img-id" border="0" alt="Logo" src="/images/glass-and-print.gif" />
-              </a>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td align="center"> 
+            <a href="/index.html">
+              <img id="logo-img-id" border="0" alt="Logo" src="/images/glass-and-print.gif" />
+            </a>
+          </td>
+        </tr>
       </table>
     </div>
     
     <div id="navigation-menu" class="navigation-menu">
       <table id="navigation-table" align="center">
-        <tbody>
-          <tr>
-            <td class="active" align="center">
-              <a href="/index.html">Home</a>
-            </td>
-            <td align="center">
-              <a href="/vintage-posters/collections.html">Vintage Posters</a>
-            </td>
-            <td align="center">
-              <a href="/art-glass/collections.html">Art Glass</a>
-            </td>
-            <td align="center">
-              <a href="/about-us.html">About</a>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td class="active" align="center">
+            <a href="/index.html">Home</a>
+          </td>
+          <td align="center">
+            <a href="/vintage-posters/collections.html">Vintage Posters</a>
+          </td>
+          <td align="center">
+            <a href="/art-glass/collections.html">Art Glass</a>
+          </td>
+          <td align="center">
+            <a href="/about-us.html">About</a>
+          </td>
+        </tr>
       </table>
     </div>
 
     <div id="content-wrapper" class="content-wrapper">
       <table width="100%" id="content-table" align="center">
-        <tbody>
-          <tr>
-            <td width="60%" bgcolor="orange" align="rigth">
-              <font color="white">Open For Business )</font>
-            </td>
-            <td width="40%"/>
-          </tr>
-          <tr>
-            <td height="640px" valign="top" align="center">
-              <div id="home-anime"></div>
-            </td>
-            <td bgcolor="orange" valign="top" align="left">
-              <table>
-                <tr>
-                  <td valign="top">
-                    <p id="piece-title">
-                      A collection of original <a href="/vintage-posters/collections.html">vintage posters</a> and <a href="/art-glass/collections.html">fine contemporary glass</a>.
-                    </p>
-                    <p id="piece-description">
-                      During the first half of the 20th century posters were the most direct means of reaching a wide public. Prior to the late 1800's print advertising was restricted to black and white classified text. Through the invention, and then development of the stone lithographic printing technique by Jules Cheret, the world of vintage advertising posters was born. Finally capable of mass-producing advertisements in color, companies of the day became a magnet for a wide range of established and emerging artists such as Henri de Toulouse Lautrec, Alphonse Mucha, Theophile-Alexandre Steinlen to develop their marketing ideas and create striking poster images. Only intended to last the short life of an advertising campaign, between 100 and 3000 posters were printed on inexpensive paper and placed throughout the city on billboards, subways and the sides of buildings. In a matter of weeks these posters were torn down or covered with the next advertisement. Very few pieces survived saved by collectors, printing houses, or the artists themselves. Until today the poster has lost nothing of its actuality or of its effective power. New experiences and knowledge repeatedly question the efficacy of the poster, but it constantly renews itself with the discovery of new forms of expression and assertion, born out of the struggle of graphic artists with the design problems of their time. Posters are barometer of social, economic, political and cultural events, as well as mirrors of our everyday lives.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td width="100%" bgcolor="orange" align="rigth">
+            <font color="white">Open For Business )</font>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <table width="100%" class="all-pieces-frame">
+              <tr>
+                <td>
+                  <table width="100%" class="all-pieces">
+                    <tr>
+                      <td>
+                        <!--
+                        <div id="poster-anime"></div>
+                          -->
+                        <a href="/vintage-posters/collections.html"><img border="0" alt="" src="/images/vintage-posters/contemporary/thumbs/collection.jpg"></a>
+                      </td>
+                      <td>
+                        <a href="/vintage-posters/collections.html">Vintage Posters</a>
+                        <br />
+                        <font style="font-weight: normal; font-size: 14px; text-transform: none;" color="0f3957">During the first half of the 20th century posters were the most direct means of reaching a wide public. Prior to the late 1800's print advertising was restricted to black and white classified text. Through the invention, and then development of the stone lithographic printing technique by Jules Cheret, the world of vintage advertising posters was born. Finally capable of mass-producing advertisements in color, companies of the day became a magnet for a wide range of established and emerging artists such as Henri de Toulouse Lautrec, Alphonse Mucha, Theophile-Alexandre Steinlen to develop their marketing ideas and create striking poster images. Only intended to last the short life of an advertising campaign, between 100 and 3000 posters were printed on inexpensive paper and placed throughout the city on billboards, subways and the sides of buildings. In a matter of weeks these posters were torn down or covered with the next advertisement. Very few pieces survived saved by collectors, printing houses, or the artists themselves. Until today the poster has lost nothing of its actuality or of its effective power. New experiences and knowledge repeatedly question the efficacy of the poster, but it constantly renews itself with the discovery of new forms of expression and assertion, born out of the struggle of graphic artists with the design problems of their time. Posters are barometer of social, economic, political and cultural events, as well as mirrors of our everyday lives.</font>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <!--
+              </tr>
+              <tr>
+                -->
+                <td>
+                  <table class="all-pieces">
+                    <tr>
+                      <td>
+                        <!--
+                        <div id="glass-anime"></div>
+                          -->
+                        <a href="/art-glass/collections.html"><img border="0" alt="" src="/images/art-glass/adam/thumbs/collection.jpg"></a>
+                      </td>
+                      <td>
+                        <a href="/art-glass/collections.html">Art Glass</a>
+                        <br />
+                        <font style="font-weight: normal; font-size: 14px; text-transform: none;" color="0f3957">"The work of the furnace was proceeding fervently. At the end of the blowing irons, the molten glass swelled, twisted, became silvery as a little cloud, shone like the moon, crackled, divided into thousand infinitely fine fragments, glittering, slighter than the threads which we see in the forest at dawn stretching from branch to branch. The workmen were shaping harmonious vases, each as he operated obeying a rhythm of his own, generated by the quality of the matter and by the habit of movements most apt to dominate it. The apprentices would place a small pear-shaped mass of burning paste on the spot pointed out by the master, and the mass would lengthen out, twist, transform itself into a handle, rim, a spout, a foot, or a stem. The red heat would slowly die out under the instruments, and the half-formed chalice would again be exposed to the flame, and be drawn from it docile, ductile, sensitive to the slightest touches that adorned and refined it, conforming it to the model handed down by their fathers, or to the free invention of the new creator. The human gestures round those elegant creatures of fire, breath and iron, were extraordinarily nimble and light, like the gestures of a silent dance."
+                        <br />  
+                        <i>Gabriele D'Annunzio, The Flame of Life, 1900</i>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
       </table>
     </div>
 

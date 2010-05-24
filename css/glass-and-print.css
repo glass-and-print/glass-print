@@ -150,8 +150,8 @@
 }
 
 .content-wrapper {
-  padding-left: 8%;
-  padding-right: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .content-wrapper table td {
@@ -173,6 +173,11 @@ table.all-pieces {
   -webkit-border-radius: 7px;
 }
 
+table.all-pieces a {
+  color: #0f3957;
+  font-size: 15px;
+  text-transform: none;
+}
 
 table.all-pieces-details {
   border-style: none;
