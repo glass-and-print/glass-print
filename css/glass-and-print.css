@@ -16,7 +16,7 @@
   z-index: 100001;
 }
 
-/*.override #googlecart-arrow, */ 
+.override #googlecart-arrow,
 .override .googlecart-widget-disclaimer {
   display: none;
 }
@@ -26,9 +26,9 @@
 .override #googlecart-widget-emptymessage,
 .override #googlecart-widget-body {
   color: purple;
-  background-color: #929BFA;
-  border-color: #FFFFFF;
-  margin-left: 0em;
+  background-color: white;
+  border-color: purple;
+  margin-left: 0.5em;
 }
 
 .override .googlecart-widget-totalprice,
@@ -39,7 +39,7 @@
 .override .googlecart-widget-remove,
 .override .googlecart-widget-restore,
 .override .googlecart-widget-removed-message {
-  color: white;
+  color: purple;
   font-family: Helvetica,Arial,sans-serif;
   font-weight: normal;
   text-shadow: 0 0 0 #000000;
@@ -150,8 +150,8 @@
 }
 
 .content-wrapper {
-  padding-left: 8%;
-  padding-right: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .content-wrapper table td {
@@ -173,6 +173,11 @@ table.all-pieces {
   -webkit-border-radius: 7px;
 }
 
+table.all-pieces a {
+  color: #0f3957;
+  font-size: 15px;
+  text-transform: none;
+}
 
 table.all-pieces-details {
   border-style: none;
@@ -225,8 +230,8 @@ table.all-pieces-details td.pricetag {
 
 #cart-widget {
   position: fixed;
-  left: 10px;
-  top: 170px;
+  right: 15px;
+  top: 175px;
 }
 
 #piece-description {
