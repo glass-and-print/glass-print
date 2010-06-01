@@ -95,7 +95,7 @@ Jaml.register('make-a-deal', function(dealModel) {
 function dealListener(options) {
   var haggleDialog = $('#haggle-div');
   haggleDialog.html(Jaml.render('make-a-deal', getDealData(options)));
-  haggleDialog.dialog({ width:   525,
+  haggleDialog.dialog({ width:   550,
                         modal:   true,
                         // this depends on the feedback and google cart divs having a zIndex
                         // that is less than this [to avoid superimposing them on top of the
