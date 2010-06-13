@@ -40,7 +40,7 @@
 .override .googlecart-widget-restore,
 .override .googlecart-widget-removed-message {
   color: purple;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-weight: normal;
   text-shadow: 0 0 0 #000000;
   text-transform: none;
@@ -48,7 +48,7 @@
 
 .navigation-menu table {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 17px;
   font-size-adjust: none;
   font-stretch: normal;
@@ -83,7 +83,7 @@
 
 .content-wrapper table {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 16px;
   font-size-adjust: none;
   font-stretch: normal;
@@ -99,7 +99,7 @@
 
 .description-paragraph {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 14px;
   color: white;
   font-size-adjust: none;
@@ -135,7 +135,7 @@
 
 .about-paragraph {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 16px;
   font-size-adjust: none;
   font-stretch: normal;
@@ -236,7 +236,7 @@ table.all-pieces-details td.pricetag {
 
 #piece-description {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   color: white;
   font-size: 14px;
   font-size-adjust: none;
@@ -257,7 +257,7 @@ table.all-pieces-details td.pricetag {
 
 #seasons-greetings {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   color: #228B22;
   font-size: 18px;
   font-size-adjust: none;
@@ -274,7 +274,7 @@ table.all-pieces-details td.pricetag {
 
 #news-flash {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   color: #FF0040;
   font-size: 16px;
   font-size-adjust: none;
@@ -295,7 +295,7 @@ table.all-pieces-details td.pricetag {
 
 #piece-title {
   -x-system-font: none;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   color: white;
   font-size: 16px;
   font-size-adjust: none;
@@ -313,7 +313,7 @@ table.all-pieces-details td.pricetag {
 .footer {
   color: white;
   background-color: #FF0040;
-  font-family: "Trebuchet MS",Verdana,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
@@ -323,7 +323,7 @@ table.all-pieces-details td.pricetag {
 .deal div {
   color: white;
   background-color: #FF0040;
-  font-family: helvetica,arial,sans-serif;
+  font-family: Helvetica,sans-serif;
   text-align: center;
   padding: 4px 0px 1px 0px;
   cursor: pointer;
@@ -336,7 +336,7 @@ table.all-pieces-details td.pricetag {
 .singleViewNav div {
   color: orange;
   background-color: white;
-  font-family: helvetica,arial,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 16px;
   text-align: center;
   padding: 4px 0px 1px 0px;
@@ -349,7 +349,7 @@ table.all-pieces-details td.pricetag {
 .find div {
   color: white;
   background-color: #007F7F;
-  font-family: helvetica,arial,sans-serif;
+  font-family: Helvetica,sans-serif;
   text-align: center;
   padding: 4px 0px 1px 0px;
   cursor: pointer;
@@ -360,13 +360,13 @@ table.all-pieces-details td.pricetag {
 }
 
 .haggle-dialog {
-  font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 12px;
   color: purple;
 }
 
 .haggle-dialog-error {
-  font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 12px;
   color: red;
   margin: 0;
@@ -374,7 +374,7 @@ table.all-pieces-details td.pricetag {
 }
 
 .haggle-dialog table * {
-  font-family: "Trebuchet MS",Tahoma,Verdana,Arial,sans-serif;
+  font-family: Helvetica,sans-serif;
   font-size: 12px;
   color: #007f7f;
 }
