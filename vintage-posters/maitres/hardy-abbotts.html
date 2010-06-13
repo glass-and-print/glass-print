@@ -31,8 +31,15 @@
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
     <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
+      $(function() {
+        var findRequestDiv = $("#find-request");
+        findRequestDiv.html("ask us to find it");
+        findRequestDiv.click(function() { findRequestListener(); });
+      });
+
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
@@ -135,17 +142,17 @@
                           <table id="piece-description">
                             <tr>
                               <td>
-                                $230.00US
+                                <font color="purple"><b>SOLD</b></font>
                               </td>
                               <td>
-                                <div class="product">
+                                <div style="display: none;" class="product">
                                   <input value="Abbotts (PL. 92)"
                                          class="product-title"
                                          type="hidden">
                                   <input value="/images/vintage-posters/maitres/hardy-abbotts.jpg"
                                          class="product-image"
                                          type="hidden">
-                                  <input value="230.00"
+                                  <input value="xxx.xx"
                                          class="product-price"
                                          type="hidden">
                                   <img class="googlecart-add"
@@ -156,9 +163,14 @@
                           </table>
                         </td>
                       </tr>
-                      <tr>
+                      <tr style="display: none;">
                         <td class="deal" style="padding-top: 5px">
                           <div id="make-a-deal"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="find">
+                          <div id="find-request"></div>
                         </td>
                       </tr>
                       <tr>
@@ -217,6 +229,9 @@
   </body>
 
   <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
+  <div id="request-div" title="Let Us Find It For You!">
   </div>
 
   <div class="footer">
