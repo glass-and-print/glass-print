@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
-    <title>Glass &amp; Print - Art Glass - Gabbiani Murano Glass</title>
-    <meta name="description" content="Murano glass by Gabbiani.">
-    <meta name="keywords" content="art glass, stained glass, glass printing, murano glass, venetian glass, Gabbiani"> 
+    <title>Glass &amp; Print - Art Glass - Gabbiani - Volcano</title>
+    <meta name="description" content="Gabbiani's Volcano.">
+    <meta name="keywords" content="art glass, print vase, stained glass, murano glass, venician glass, Gabbiani"> 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link rel="shortcut icon" href="/images/glass-and-print.ico">
     <link href="/css/glass-and-print.css" rel="stylesheet" type="text/css">
@@ -26,10 +26,23 @@
             highlight-color='#FF83A0'
             currency='USD'>
     </script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
+    <script type="text/javascript" src="/javascript/jaml.js"></script>
+    <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function() {
+        var dealDiv = $("#make-a-deal");
+        dealDiv.html("make a deal");
+        dealDiv.click(function() { dealListener(); });
+      });
+      //]]>
+    </script>
   </head>
 
   <body>
-
     <div id="cart-widget">
       <div id="googlecart-widget"></div>
     </div>
@@ -73,14 +86,14 @@
       <table width="100%" id="content-table" align="center">
         <tbody>
           <tr>
-            <td width="65%" bgcolor="orange" align="rigth">
-              <font color="white">Gabbiani Glass :: Stile ed Eleganza</font>
+            <td width="65%" bgcolor="orange" align="left">
+              <a href="/art-glass/gabbiani.html"><font color="white">Collections</font></a><font color="white"> :: Gabbiani Glass</font>
             </td>
             <td width="35%" align="right">
-              <a href="/art-glass/collections.html#gabbiani">
-                <img border="0" alt="" src="/images/multi-view.jpg"/>
+              <a href="/art-glass/gabbiani/all.html#volcano">
+                <img border="0" alt="Go to Multi View" src="/images/multi-view.jpg"/>
               </a>
-              <a href="/art-glass/collections.html#gabbiani">
+              <a href="/art-glass/gabbiani/all.html#volcano">
                 <font style="font-weight: normal; text-transform: none;" color="orange">Multi View</font>
               </a>
             </td>
@@ -91,14 +104,12 @@
                 <tbody>
                   <tr>
                     <td align="right" width="10%">
-                      <a href="/art-glass/adam.html">
-                        <img border="0" alt="Adam Aaronson Glass" src="/images/left-arrow.gif"/>
+                      <a href="/art-glass/gabbiani/opposites.html">
+                        <img border="0" alt="" src="/images/left-arrow.gif"/>
                       </a>
                     </td>
                     <td align="center" width="80%">
-                      <a href="/art-glass/gabbiani/shell.html">
-                        <img border="0" alt="" src="/images/art-glass/gabbiani-collection.jpg"/>
-                      </a>
+                      <img border="0" alt="" src="/images/art-glass/gabbiani/volcano.jpg"/>
                     </td>
                     <td align="left" width="10%">
                     </td>
@@ -110,15 +121,54 @@
               <table>
                 <tr>
                   <td valign="top">
-                    <p id="piece-title">
-                    <a href="/art-glass/gabbiani/shell.html">Gabbiani Glass</a>
-                    </p>
-                    <p class="description-paragraph">
-		      For almost forty years Gabbiani, Venezia, has carried out with great enthusiasm the artisan tradition of glassmaking, which confirms exclusively manual procedures, jealously preserved and transmitted directly from the "maestro" to the apprentice. The ancient "recipe books" for the glass substance, going back as far as 1523, still give rise to every single one of Gabbiani's pieces. Even though continuous experimentation has allowed Gabbiani to obtain ever-changing shades of color, brilliance and transparence, the design and execution of each object are deeply rooted in the secular tradition and rare, original creativity of the Venetian artists. The same artists who made Venetian glass famous all over the world. Gabbiani glass production is entrusted to the extraordinary art of the best "maestry" of Murano.
-                    </p>
-                    <p class="description-paragraph">
-                      {il dettaglio diventa magia} <br /> {the detail is magic}
-                    </p>
+                    <table id="piece-description">
+                      <tr>
+                        <td id="piece-title">
+                           Volcano
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                           10.2" tall, 10.6" wide
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top: 5px;">
+                          <table id="piece-description">
+                            <tr>
+                              <td>
+                                $570.00US
+                              </td>
+                              <td>
+                                <div class="product">
+                                  <input value="Volcano"
+                                         class="product-title"
+                                         type="hidden">
+                                  <input value="/images/art-glass/gabbiani/volcano.jpg"
+                                         class="product-image"
+                                         type="hidden">
+                                  <input value="570.00"
+                                         class="product-price"
+                                         type="hidden">
+                                  <img class="googlecart-add" src="/images/cart.jpg"/>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <input type="hidden" id="collection-name" value="Gabbiani Glass" />
+                      <tr>
+                        <td class="deal" style="padding-top: 5px">
+                          <div id="make-a-deal"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="padding-top: 15px">
+                          Design by Marina Gabbiani Ravagnan. Limited edition object created to keep on the time and delight the eye.<br />Get it before your friends do.
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
@@ -143,11 +193,11 @@
 
 
   </body>
+  
+  <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
 
-  <footer>
-    <div class="footer">
+  <div class="footer">
       &copy; 2007-2010 Glass and Print
-    </div>
-  </footer>
-
+  </div>
 </html>
