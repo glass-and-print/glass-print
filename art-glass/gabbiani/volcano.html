@@ -31,12 +31,21 @@
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
     <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
         dealDiv.click(function() { dealListener(); });
+      });
+
+      $(function() {
+        $("#find-request").click(
+          function() {
+            findRequestListener();
+          }
+        );
       });
       //]]>
     </script>
@@ -133,11 +142,16 @@
                         </td>
                       </tr>
                       <tr>
+                        <td style="padding-top: 10px">
+                          <font color="purple"><b>SOLD</b></font>
+                        </td>
+                      </tr>
+                      <tr style="display: none;">
                         <td style="padding-top: 5px;">
                           <table id="piece-description">
                             <tr>
                               <td>
-                                $570.00US
+                                $xxx.xxUS
                               </td>
                               <td>
                                 <div class="product">
@@ -147,7 +161,7 @@
                                   <input value="/images/art-glass/gabbiani/volcano.jpg"
                                          class="product-image"
                                          type="hidden">
-                                  <input value="570.00"
+                                  <input value="xxx.xx"
                                          class="product-price"
                                          type="hidden">
                                   <img class="googlecart-add" src="/images/cart.jpg"/>
@@ -159,6 +173,11 @@
                       </tr>
                       <input type="hidden" id="collection-name" value="Gabbiani Glass" />
                       <tr>
+                        <td class="find">
+                          <div id="find-request">ask us to find it</div>
+                        </td>
+                      </tr>
+                      <tr style="display: none;">
                         <td class="deal" style="padding-top: 5px">
                           <div id="make-a-deal"></div>
                         </td>
@@ -195,6 +214,9 @@
   </body>
   
   <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
+  <div id="request-div" title="Let Us Find It For You!">
   </div>
 
   <div class="footer">
