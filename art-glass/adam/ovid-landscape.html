@@ -31,12 +31,16 @@
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
     <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
         dealDiv.click(function() { dealListener(); });
+      });
+      $(function() {
+          $("#find-request").click(function() { findRequestListener(); });
       });
       //]]>
     </script>
@@ -126,10 +130,15 @@
                     </tr>
                     <tr>
                       <td>
+                        Approx 5" tall (mini)
+                      </td>
+                    </tr>
+                    <tr style="display: none;">
+                      <td>
                         <table id="piece-description">
                           <tr>
                             <td>
-                              Approx 5" tall (mini), $260.00US
+                              $xxx.xxUS
                             </td>
                             <td>
                               <div class="product">
@@ -139,7 +148,7 @@
                                 <input value="/images/art-glass/adam/ovid-landscape.jpg"
                                        class="product-image"
                                        type="hidden">
-                                <input value="260.00"
+                                <input value="xxx.xx"
                                        class="product-price" 
                                        type="hidden">
                                 <img class="googlecart-add"
@@ -147,13 +156,23 @@
                               </div>
                             </td>
                           </tr>
-                          <input type="hidden" id="collection-name" value="Adam Aaronson Ovid" />
-                          <tr>
-                            <td class="deal" style="padding-top: 5px">
-                              <div id="make-a-deal"></div>
-                            </td>
-                          </tr>
                         </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 5px">
+                        <font color="purple"><b>SOLD</b></font>
+                      </td>
+                    </tr>
+                    <input type="hidden" id="collection-name" value="Adam Aaronson Ovid" />
+                    <tr>
+                      <td class="find">
+                        <div id="find-request">ask us to find it</div>
+                      </td>
+                    </tr>
+                    <tr style="display: none;">
+                      <td class="deal" style="padding-top: 5px">
+                        <div id="make-a-deal"></div>
                       </td>
                     </tr>
                     <tr>
@@ -183,10 +202,12 @@
       </div>
     </div>
 
-
   </body>
   
   <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
+  <div id="request-div" title="Let Us Find It For You!">
   </div>
 
   <div class="footer">
