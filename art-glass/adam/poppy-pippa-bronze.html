@@ -31,13 +31,26 @@
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
     <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function() {
-          var dealDiv = $("#make-a-deal");
-          dealDiv.html("make a deal");
-          dealDiv.click(function() { dealListener("product-attr-color"); });
-        });
+        $("#find-request").click(
+          function() {
+            findRequestListener({ id                   : undefined,
+                                  additionalAttributes : ['product-attr-color','product-attr-size'] });
+          }
+        );
+      });
+
+      $(function() {
+        $("#make-a-deal").click(
+          function() {
+            dealListener({ id                   : undefined,
+                           additionalAttributes : ['product-attr-color','product-attr-size'] });
+          }
+        );
+      });
       //]]>
     </script>
   </head>
@@ -128,9 +141,9 @@
                         <table id="piece-description">
                           <tr>
                             <td>
-                              6" tall x 5" wide (medium), $230.00US
+                              6" tall x 5" wide (medium)
                             </td>
-                            <td>
+                            <td style="display: none;">
                               <div class="product">
                                 <input value="Pippa Vase"
                                        class="product-title"
@@ -138,7 +151,7 @@
                                 <input value="/images/art-glass/adam/poppy-pippa-bronze.jpg"
                                        class="product-image"
                                        type="hidden">
-                                <input value="230.00"
+                                <input value="xxx.xx"
                                        class="product-price"
                                        type="hidden">
                                 <input value="Bronze"
@@ -152,10 +165,15 @@
                               </div>
                             </td>
                           </tr>
+                          <tr>
+                            <td style="padding-top: 5px">
+                              <font color="purple"><b>SOLD</b></font>
+                            </td>
+                          </tr>
                           <input type="hidden" id="collection-name" value="Adam Aaronson Poppy" />
                           <tr>
-                            <td class="deal" style="padding-top: 5px">
-                              <div id="make-a-deal"></div>
+                            <td class="find">
+                              <div id="find-request">ask us to find it</div>
                             </td>
                           </tr>
                         </table>
@@ -188,13 +206,15 @@
       </div>
     </div>
 
-
   </body>
   
+  <div id="request-div" title="Let Us Find It For You!">
+  </div>
+
   <div id="haggle-div" title="Let's Make a Deal!">
   </div>
 
   <div class="footer">
-      &copy; 2007-2010 Glass and Print
+    &copy; 2007-2010 Glass and Print
   </div>
 </html>
