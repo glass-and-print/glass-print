@@ -8,8 +8,8 @@ use CGI::Carp;
 
 sub trim {
   my $s = shift;
-  $s =~ s/^\s+//; 
-  $s =~ s/\s+$//; 
+  $s =~ s/^\s+//;
+  $s =~ s/\s+$//;
   return $s;
 }
 
