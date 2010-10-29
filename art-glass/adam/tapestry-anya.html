@@ -1,8 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
-    <title>Glass &amp; Print - Art Glass - Adam Aaronson - Ovid Landscape Vase</title>
-    <meta name="description" content="Adam Aaronson's Ovid Landscape Vase.">
+    <title>Glass &amp; Print - Art Glass - Adam Aaronson - Tapestry Anya Vase</title>
+    <meta name="description" content="Adam Aaronson's Tapestry Anya Vases.">
     <meta name="keywords" content="art glass, stained glass, hand-blown glass, Adam Aaronson"> 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link rel="shortcut icon" href="/images/glass-and-print.ico">
@@ -31,16 +31,16 @@
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
     <script type="text/javascript" src="/javascript/deal.js"></script>
-    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
-        dealDiv.click(function() { dealListener(); });
-      });
-      $(function() {
-          $("#find-request").click(function() { findRequestListener(); });
+        dealDiv.click(
+          function() {
+            dealListener({ additionalAttributes : ['product-attr-color'] });
+          }
+        );
       });
       //]]>
     </script>
@@ -53,36 +53,32 @@
 
     <div id="header-div" class="header-div">
       <table id="header-table" class="header-table">
-        <tbody>
-          <tr>
-            <td align="center"> 
-              <a href="/index.html">
-                <img id="logo-img-id" border="0" alt="Logo" src="/images/glass-and-print.gif" />
-              </a>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td align="center"> 
+            <a href="/index.html">
+              <img id="logo-img-id" border="0" alt="Logo" src="/images/glass-and-print.gif" />
+            </a>
+          </td>
+        </tr>
       </table>
     </div>
 
     <div id="navigation-menu" class="navigation-menu">
       <table id="navigation-table" align="center">
-        <tbody>
-          <tr>
-            <td align="center">
-              <a href="/index.html">Home</a>
-            </td>
-            <td align="center">
-              <a href="/vintage-posters/collections.html">Vintage Posters</a>
-            </td>
-            <td class="active" align="center">
-              <a href="/art-glass/collections.html">Art Glass</a>
-            </td>
-            <td align="center">
-              <a href="/about-us.html">About</a>
-            </td>
-          </tr>
-        </tbody>
+        <tr>
+          <td align="center">
+            <a href="/index.html">Home</a>
+          </td>
+          <td align="center">
+            <a href="/vintage-posters/collections.html">Vintage Posters</a>
+          </td>
+          <td class="active" align="center">
+            <a href="/art-glass/collections.html">Art Glass</a>
+          </td>
+          <td align="center">
+            <a href="/about-us.html">About</a>
+          </td>
+        </tr>
       </table>
     </div>
 
@@ -90,13 +86,13 @@
       <table width="100%" id="content-table" align="center">
         <tr>
           <td width="65%" bgcolor="orange" align="left">
-            <a href="/art-glass/adam.html"><font color="white">Collections</font></a><font color="white"> :: Adam Aaronson Ovid</font>
+            <a href="/art-glass/adam.html"><font color="white">Collections</font></a><font color="white"> :: Adam Aaronson Poppy</font>
           </td>
           <td width="35%" align="right">
-            <a href="/art-glass/adam/all.html#ovid-landscape">
+            <a href="/art-glass/adam/all.html#tapestry-anya">
               <img border="0" alt="Go to Multi View" src="/images/multi-view.jpg"/>
             </a>
-            <a href="/art-glass/adam/all.html#ovid-landscape">
+            <a href="/art-glass/adam/all.html#tapestry-anya">
               <font style="font-weight: normal; text-transform: none;" color="orange">Multi View</font>
             </a>
           </td>
@@ -106,17 +102,14 @@
             <table>
               <tr>
                 <td align="right" width="10%">
-                  <a href="/art-glass/adam/bark-bottle.html">
+                  <a href="/art-glass/adam/ovid-landscape.html">
                     <img border="0" alt="" src="/images/left-arrow.gif"/>
                   </a>
                 </td>
                 <td align="center" width="80%">
-                  <img border="0" alt="" src="/images/art-glass/adam/ovid-landscape.jpg"/>
+                  <img border="0" alt="" src="/images/art-glass/adam/tapestry-anya.jpg"/>
                 </td>
                 <td align="left" width="10%">
-                  <a href="/art-glass/adam/tapestry-anya.html">
-                    <img border="0" alt="" src="/images/right-arrow.gif"/>
-                  </a>
                 </td>
               </tr>
             </table>
@@ -128,60 +121,41 @@
                   <table id="piece-description">
                     <tr>
                       <td id="piece-title">
-                        Landscape Vase
+                        Anya Handblown Glass Vase [Tapestry]
                       </td>
                     </tr>
                     <tr>
-                      <td>
-                        Approx 5" tall (mini)
+                      <td colspan="2" style="padding-top: 5px">
+                        <div class="product">
+                          <input value="Anya Tapestry Vase"
+                                 class="product-title"
+                                 type="hidden">
+                          <input value="/images/art-glass/adam/tapestry-anya.jpg"
+                                 class="product-image"
+                                 type="hidden">
+                          <input value="520.00"
+                                 class="product-price" 
+                                 type="hidden">
+                          <select class="product-attr-color">
+                            <option googlecart-set-product-price="520.00"
+                                    value="Crimson">Crimson, 9" tall, $520.00US</option>
+                            <option googlecart-set-product-price="360.00"
+                                    value="Bay">Bay, 7" tall, $360.00US</option>
+                            <option googlecart-set-product-price="280.00"
+                                    value="Caramel">Caramel, 5" tall, $280.00US</option>
+                          </select>
+                          <img class="googlecart-add" src="/images/cart.jpg">
+                        </div>
                       </td>
                     </tr>
-                    <tr style="display: none;">
-                      <td>
-                        <table id="piece-description">
-                          <tr>
-                            <td>
-                              $xxx.xxUS
-                            </td>
-                            <td>
-                              <div class="product">
-                                <input value="Landscape Vase"
-                                       class="product-title"
-                                       type="hidden">
-                                <input value="/images/art-glass/adam/ovid-landscape.jpg"
-                                       class="product-image"
-                                       type="hidden">
-                                <input value="xxx.xx"
-                                       class="product-price" 
-                                       type="hidden">
-                                <img class="googlecart-add"
-                                     src="/images/cart.jpg">
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
+                    <input type="hidden" id="collection-name" value="Adam Aaronson Tapestry" />
                     <tr>
-                      <td style="padding-top: 5px">
-                        <font color="purple"><b>SOLD</b></font>
-                      </td>
-                    </tr>
-                    <input type="hidden" id="collection-name" value="Adam Aaronson Ovid" />
-                    <tr>
-                      <td class="find">
-                        <div id="find-request">ask us to find it</div>
-                      </td>
-                    </tr>
-                    <tr style="display: none;">
                       <td class="deal" style="padding-top: 5px">
                         <div id="make-a-deal"></div>
                       </td>
                     </tr>
                     <tr>
-                      <td colspan="2" style="padding-top: 15px">
-                        This free blown vase was created using the &quot;late coloring&quot; techniques Adam has been developing, where colors are applied once the piece has reached full size. The original inspiration for these works came from impressionist painters such as Monet, and influences from Turner and Whistler also surface from time to time.
-                      </td>
+                      <td colspan="2" style="padding-top: 15px">These glass vessels are fired with pure silver leaf and embedded with tiny glass jewels, inspired by the vibrant colors and textures of tapestries.</td>
                     </tr>
                   </table>
                 </td>
@@ -208,9 +182,6 @@
   </body>
   
   <div id="haggle-div" title="Let's Make a Deal!">
-  </div>
-
-  <div id="request-div" title="Let Us Find It For You!">
   </div>
 
   <div class="footer">
