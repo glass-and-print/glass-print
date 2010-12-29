@@ -1,3 +1,5 @@
 .ftpquota
 docs
 target
+.classpath
+.project
