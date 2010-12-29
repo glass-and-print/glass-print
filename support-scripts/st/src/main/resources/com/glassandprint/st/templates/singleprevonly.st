@@ -118,9 +118,6 @@
                       <input type=image src="/images/vintage-posters/small-format/$file$.jpg" onclick="window.open('/images/vintage-posters/small-format/high-resolution/$file$.jpg','$title$','resizable=yes,menubar=no,toolbar=no,status=no,location=no,titlebar=no,scrollbars=yes,width=540,height=720')"/>
                     </td>
                     <td align="left" width="10%">
-                      <a href="/vintage-posters/small-format/$nextfile$.html">
-                        <img border="0" alt="" src="/images/right-arrow.gif"/>
-                      </a>
                     </td>
                   </tr>
                 </tbody>
