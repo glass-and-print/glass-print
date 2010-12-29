@@ -7,11 +7,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.LineNumberReader;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -28,6 +28,8 @@ public class PageGenerator {
   private final static Pattern EXPANDED_AUTHOR =
     Pattern.compile("^By\\s(.*),\\s(.*),\\s\\(.*\\)$");
 
+  private final static Random RANDOM_ID = new Random();
+  
   private final static Map<String,String> DIR_TO_COLLECTION = 
     new HashMap<String,String>();
   static {
@@ -48,7 +50,10 @@ public class PageGenerator {
     StringTemplate single = group.getInstanceOf("single");
     StringTemplate singleNextOnly = group.getInstanceOf("singlenextonly");
     StringTemplate singlePrevOnly = group.getInstanceOf("singleprevonly");
-    List<File> sourceFiles = getSourceFiles(pathToSourceDirectory); 
+    StringTemplate multi = group.getInstanceOf("multi");
+    List<File> sourceFiles = getSourceFiles(pathToSourceDirectory);
+    FileWriter multiWriter = openForWriting(pathToSourceDirectory, 
+                                            "multi.html");
     for (int i = 0; i < sourceFiles.size(); i++) {
       Map<String,String> attributes = getSourceAttributes(sourceFiles.get(i));
       StringTemplate template = single;
@@ -64,11 +69,31 @@ public class PageGenerator {
         attributes.put("nextfile", getFileBase(sourceFiles.get(i+1)));
         attributes.put("prevfile", getFileBase(sourceFiles.get(i-1)));
       }
-      System.out.println(attributes);
       template.setAttributes(attributes);
       generatePage(template, pathToSourceDirectory);
       template.reset();
+      
+      multi.setAttributes(attributes);
+      addToMulti(multi, multiWriter, i);
+      multi.reset();
     }
+    multiWriter.close();
+  }
+
+  private static void addToMulti(StringTemplate template, 
+                                 FileWriter multiWriter,
+                                 int sourceNumber) 
+  throws IOException {
+    if (sourceNumber % 2 == 0) {
+      multiWriter.write("<tr>\n");
+    }
+    template.setAttribute("id", RANDOM_ID.nextInt(100000));
+    multiWriter.write(template.toString());
+    multiWriter.write("\n");
+    if (sourceNumber % 2 == 1) {
+      multiWriter.write("</tr>\n");
+    }
+    multiWriter.flush();
   }
 
   private static List<File> getSourceFiles(String pathToSourceDirectory) {
@@ -151,6 +176,11 @@ public class PageGenerator {
         writer.close();
       }
     }
+  }
+  
+  private static FileWriter openForWriting(String pathToDirectory, 
+                                           String filename) throws IOException {
+    return new FileWriter(new File(new File(pathToDirectory), filename));
   }
 
   private static String justName(String author) {

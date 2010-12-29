@@ -29,7 +29,7 @@
                             </td>
                           </tr>
                           <tr><td style="padding-bottom: 7px;" class="deal" colspan="2"><div class="make-a-deal" id="$id$">make a deal</div></td></tr>
-                          <tr><td colspan="2">$author$</td></tr>
+                          <tr><td colspan="2">$authorexpanded$</td></tr>
                           <tr><td colspan="2">$year$</td></tr>
                           <tr><td colspan="2">$size$</td></tr>
                           <tr><td style="padding-top: 5px" colspan="2">$description$</td></tr>
