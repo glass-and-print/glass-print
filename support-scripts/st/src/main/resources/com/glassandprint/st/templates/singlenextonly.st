@@ -177,17 +177,17 @@
                       </tr>
                       <tr>
                         <td colspan="2">
-                          $description$
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2">
                           $year$
                         </td>
                       </tr>
                       <tr>
                         <td colspan="2">
                           $size$
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="padding-top: 15px">
+                          $description$
                         </td>
                       </tr>
                     </table>
