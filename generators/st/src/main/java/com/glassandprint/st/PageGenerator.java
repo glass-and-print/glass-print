@@ -22,7 +22,7 @@ public class PageGenerator {
 
   public static void main(String[] args) throws FileNotFoundException,
                                                 IOException {
-    PageGenerator.generatePages(args[0], args[1]);
+    PageGenerator.generatePages(args[0], args[1], args[2]);
   }
 
   private final static Pattern EXPANDED_AUTHOR =
@@ -42,7 +42,8 @@ public class PageGenerator {
   }
 
   public static void generatePages(String pathToSourceDirectory,
-                                   String pathToTemplatesDirectory)
+                                   String pathToTemplatesDirectory,
+                                   String pathToOutputDirectory)
   throws FileNotFoundException, IOException {
     StringTemplateGroup group =
       new StringTemplateGroup("glassandprint-templates",
@@ -51,12 +52,14 @@ public class PageGenerator {
     StringTemplate singleNextOnly = group.getInstanceOf("singlenextonly");
     StringTemplate singlePrevOnly = group.getInstanceOf("singleprevonly");
     StringTemplate multi = group.getInstanceOf("multi");
-    List<File> sourceFiles = getSourceFiles(pathToSourceDirectory);
-    FileWriter multiWriter = openForWriting(pathToSourceDirectory, 
+    List<File> sourceFiles = getSourceFiles(pathToSourceDirectory, 
+                                            pathToOutputDirectory);
+    FileWriter multiWriter = openForWriting(pathToOutputDirectory, 
                                             "multi.html");
     for (int i = 0; i < sourceFiles.size(); i++) {
       Map<String,String> attributes = getSourceAttributes(sourceFiles.get(i));
       StringTemplate template = single;
+      // FIXME handle the case where there is only one source
       if (i == 0) {
         template = singleNextOnly;
         attributes.put("nextfile", getFileBase(sourceFiles.get(i+1)));
@@ -70,7 +73,7 @@ public class PageGenerator {
         attributes.put("prevfile", getFileBase(sourceFiles.get(i-1)));
       }
       template.setAttributes(attributes);
-      generatePage(template, pathToSourceDirectory);
+      generatePage(template, pathToOutputDirectory);
       template.reset();
       
       multi.setAttributes(attributes);
@@ -96,12 +99,27 @@ public class PageGenerator {
     multiWriter.flush();
   }
 
-  private static List<File> getSourceFiles(String pathToSourceDirectory) {
+  private static List<File> getSourceFiles(final String pathToSourceDirectory,
+                                           final String pathToOutputDirectory) {
     return Arrays.asList(
       (new File(pathToSourceDirectory)).listFiles(
         new FileFilter() {
           public boolean accept(File file) {
-            return file.getAbsolutePath().endsWith(".txt");
+            if (file.isDirectory()) {
+              return false;
+            }
+            
+            if (!file.getAbsolutePath().endsWith(".txt")) {
+              return false;
+            }
+            
+            File generatedPage = new File(new File(pathToOutputDirectory),
+                                          getFileBase(file) + ".html");
+            if (generatedPage.exists()) {
+              return false;
+            }
+            
+            return true;
           }
         }));
   }
@@ -111,6 +129,7 @@ public class PageGenerator {
     Map<String,String> attributes = new HashMap<String,String>();
 
     attributes.put("collection", toCollection(sourceFile));
+    attributes.put("collectiondir", toCollectionDir(sourceFile));
     attributes.put("file", getFileBase(sourceFile));
     attributes.put("condition", "Condition A");
 
@@ -125,14 +144,23 @@ public class PageGenerator {
   }
 
   private static String toCollection(File sourceFile) {
+    return DIR_TO_COLLECTION.get(toCollectionDir(sourceFile));
+  }
+  
+  private static String toCollectionDir(File sourceFile) {
     String parent = sourceFile.getParent();
-    return DIR_TO_COLLECTION.get(parent.substring(parent.lastIndexOf("/") + 1));
+    return parent.substring(parent.lastIndexOf("/") + 1);
   }
 
   private static void lineToAttributes(String line,
                                        int lineNumber,
                                        Map<String,String> attributes) {
+    // TODO use StringUtils...
     String trimmedLine = line.trim();
+    if (trimmedLine.length() == 0) {
+      return;
+    }
+    
     switch (lineNumber) {
       case 1:
         attributes.put("title", trimmedLine);
