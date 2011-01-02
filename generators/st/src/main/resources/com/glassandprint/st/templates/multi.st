@@ -3,7 +3,7 @@
                   <table class="all-pieces">
                     <tr>
                       <td>
-                        <a href="/vintage-posters/modern/$file$.html"><img border="0" title="Click for a Detailed View" src="/images/vintage-posters/modern/thumbs/$file$.jpg"></a>
+                        <a href="/vintage-posters/$collectiondir$/$file$.html"><img border="0" title="Click for a Detailed View" src="/images/vintage-posters/$collectiondir$/thumbs/$file$.jpg"></a>
                       </td>
                       <td>
                         <table class="all-pieces-details">
@@ -18,7 +18,7 @@
                                        class="product-title"
                                        id="product-title-$id$"
                                        type="hidden">
-                                <input value="/images/vintage-posters/modern/$file$.jpg"
+                                <input value="/images/vintage-posters/$collectiondir$/$file$.jpg"
                                        class="product-image"
                                        type="hidden">
                                 <input value="$price$"

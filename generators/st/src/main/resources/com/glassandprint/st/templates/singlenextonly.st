@@ -93,13 +93,13 @@
         <tbody>
           <tr>
             <td width="65%" bgcolor="orange" align="left">
-              <a href="/vintage-posters/small-format.html"><font color="white">Collections</font></a><font color="white"> :: $collection$</font>
+              <a href="/vintage-posters/$collectiondir$.html"><font color="white">Collections</font></a><font color="white"> :: $collection$</font>
             </td>
             <td width="35%" align="right">
-              <a href="/vintage-posters/small-format/all.html#$file$">
+              <a href="/vintage-posters/$collectiondir$/all.html#$file$">
                 <img border="0" alt="" src="/images/multi-view.jpg"/>
               </a>
-              <a href="/vintage-posters/small-format/all.html#$file$">
+              <a href="/vintage-posters/$collectiondir$/all.html#$file$">
                 <font style="font-weight: normal; text-transform: none;" color="orange">Multi View</font>
               </a>
             </td>
@@ -112,10 +112,10 @@
                     <td align="right" width="10%">
                     </td>
                     <td align="center" width="80%">
-                      <input type=image src="/images/vintage-posters/small-format/$file$.jpg" onclick="window.open('/images/vintage-posters/small-format/high-resolution/$file$.jpg','$title$','resizable=yes,menubar=no,toolbar=no,status=no,location=no,titlebar=no,scrollbars=yes,width=540,height=720')"/>
+                      <input type=image src="/images/vintage-posters/$collectiondir$/$file$.jpg" onclick="window.open('/images/vintage-posters/$collectiondir$/high-resolution/$file$.jpg','$title$','resizable=yes,menubar=no,toolbar=no,status=no,location=no,titlebar=no,scrollbars=yes,width=540,height=720')"/>
                     </td>
                     <td align="left" width="10%">
-                      <a href="/vintage-posters/small-format/$nextfile$.html">
+                      <a href="/vintage-posters/$collectiondir$/$nextfile$.html">
                         <img border="0" alt="" src="/images/right-arrow.gif"/>
                       </a>
                     </td>
@@ -145,7 +145,7 @@
                                   <input value="$title$"
                                          class="product-title"
                                          type="hidden">
-                                  <input value="/images/vintage-posters/small-format/$file$.jpg"
+                                  <input value="/images/vintage-posters/$collectiondir$/$file$.jpg"
                                          class="product-image"
                                          type="hidden">
                                   <input value="$price$"
