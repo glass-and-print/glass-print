@@ -59,10 +59,10 @@ public class PageGenerator {
     for (int i = 0; i < sourceFiles.size(); i++) {
       Map<String,String> attributes = getSourceAttributes(sourceFiles.get(i));
       StringTemplate template = single;
-      // FIXME handle the case where there is only one source
       if (i == 0) {
         template = singleNextOnly;
-        attributes.put("nextfile", getFileBase(sourceFiles.get(i+1)));
+        attributes.put("nextfile", sourceFiles.size() == 1
+                                   ? "" : getFileBase(sourceFiles.get(i+1)));
       }
       else if (i == sourceFiles.size() - 1) {
         template = singlePrevOnly;
