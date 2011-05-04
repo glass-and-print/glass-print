@@ -34,12 +34,19 @@
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
     <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
         dealDiv.click(function() { dealListener(); });
+      });
+
+      $(function() {
+        var findRequestDiv = $("#find-request");
+        findRequestDiv.html("ask us to find it");
+        findRequestDiv.click(function() { findRequestListener(); });
       });
       //]]>
     </script>
@@ -128,9 +135,9 @@
                         <table id="piece-description">
                           <tr>
                             <td>
-                              $120.00US
+                              <font color="purple"><b>SOLD</b></font>
                             </td>
-                            <td>
+                            <td style="display: none;">
                               <div class="product">
                                 <input value="New York City"
                                        class="product-title"
@@ -149,7 +156,8 @@
                       </td>
                     </tr>
                     <input type="hidden" id="collection-name" value="Travel"/>
-                    <tr><td class="deal" style="padding-top: 5px"><div id="make-a-deal"></div></td></tr>
+                    <tr><td class="find"><div id="find-request"></div></td></tr>
+                    <tr style="display: none;"><td class="deal" style="padding-top: 5px"><div id="make-a-deal"></div></td></tr>
                     <tr><td style="padding-top: 15px">From Sea to Shining Sea, 2009</td></tr>
                     <tr><td>Six color serigraph</td></tr>
                     <tr><td>14" W x 24" H</td></tr>
@@ -177,8 +185,11 @@
     </div>
 
   </body>
-  
+
   <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
+  <div id="request-div" title="Let Us Find It For You!">
   </div>
 
   <div class="footer">
