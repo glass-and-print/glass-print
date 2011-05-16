@@ -31,21 +31,31 @@ if ($haggler_offer =~ /^(?:\d+(?:\.\d*)?|\.\d+)$/) {
 }
 
 if ($email_valid && $offer_valid) {
-  my $dm = join("|", $haggled_collection, $haggled_piece, $haggler_email, $haggler_offer);
-  my $dm_response = `curl --write-out \"response-code=%{http_code}\" -X POST http://twitter.com/direct_messages/new.xml -u glassprintdeals:fooobaar -duser=glassprint -dtext=\"$dm\"`;
-  if ($dm_response =~ /response-code=(.+)/) {
-    if (200 != $1) {
-      carp "DM=$dm; response=$dm_response";
-    }
+  my $content = join("|", $haggled_collection, $haggled_piece, $haggler_email, $haggler_offer) . ".";
+
+  my $smos = open(SENDMAIL, "|/usr/bin/env sendmail -t");
+  if ($smos) {
+    print SENDMAIL "From: $haggler_email\n";
+    print SENDMAIL "Reply-to: $haggler_email\n";
+    print SENDMAIL "Subject: make-a-deal\n";
+    print SENDMAIL "To: glassprintdeals\@gmail.com\n";
+    print SENDMAIL "Content-type: text/plain\n\n";
+    print SENDMAIL $content;
+    close(SENDMAIL);
+
+    print $cgi->header("text/html", "202"),
+          $cgi->start_html,
+          $cgi->p({-class=>'haggle-dialog'}, "Your offer (US\$" . $haggler_offer . ") for the '" . $haggled_piece . "' piece from the '" . $haggled_collection . "' collection was submitted successfully. We will email you at " . $haggler_email . " within 24 hours. Thank you!"),
+          $cgi->end_html;
   }
   else {
-    carp "DM=$dm; response=$dm_response";
-  }
+    carp "couldn't open sendmail to notify about offer: $content";
 
-  print $cgi->header("text/html", "202"),
-        $cgi->start_html,
-        $cgi->p({-class=>'haggle-dialog'}, "Your offer (US\$" . $haggler_offer . ") for the '" . $haggled_piece . "' piece from the '" . $haggled_collection . "' collection was submitted successfully. We will email you at " . $haggler_email . " within 24 hours. Thank you!"),
-        $cgi->end_html;
+    print $cgi->header("text/html", "503"),
+          $cgi->start_html,
+          $cgi->p({-class=>'haggle-dialog-error'}, "Your offer (US\$" . $haggler_offer . ") for the '" . $haggled_piece . "' piece from the '" . $haggled_collection . "' collection could not be submitted. We are very sorry for the inconvienece. Please email us directly at sales\@glass-print.com."),
+          $cgi->end_html;
+  }
 }
 else {
   print $cgi->header("text/html", "403"),
