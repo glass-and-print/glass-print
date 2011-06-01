@@ -33,6 +33,10 @@ if ($haggler_offer =~ /^(?:\d+(?:\.\d*)?|\.\d+)$/) {
 if ($email_valid && $offer_valid) {
   my $content = join("|", $haggled_collection, $haggled_piece, $haggler_email, $haggler_offer) . ".";
 
+  open(DEALS, ">>/tmp/deals.txt");
+  print DEALS "$content\n";
+  close(DEALS);
+
   my $smos = open(SENDMAIL, "|/usr/bin/env sendmail -t");
   if ($smos) {
     print SENDMAIL "From: $haggler_email\n";
@@ -40,7 +44,7 @@ if ($email_valid && $offer_valid) {
     print SENDMAIL "Subject: make-a-deal\n";
     print SENDMAIL "To: glassprintdeals\@gmail.com\n";
     print SENDMAIL "Content-type: text/plain\n\n";
-    print SENDMAIL $content;
+    print SENDMAIL "$content";
     close(SENDMAIL);
 
     print $cgi->header("text/html", "202"),
