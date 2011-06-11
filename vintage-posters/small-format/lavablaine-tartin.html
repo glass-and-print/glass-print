@@ -31,8 +31,15 @@
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
     <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
+      $(function() {
+        var findRequestDiv = $("#find-request");
+        findRequestDiv.html("ask us to find it");
+        findRequestDiv.click(function() { findRequestListener(); });
+      });
+
       $(function() {
         var dealDiv = $("#make-a-deal");
         dealDiv.html("make a deal");
@@ -131,6 +138,11 @@
                         </td>
                       </tr>
                       <tr>
+                        <td style="padding-top: 10px;">
+                          <font color="purple"><b>SOLD</b></font>
+                        </td>
+                      </tr>
+                      <tr style="display: none;">
                         <td style="padding-top: 5px;">
                           <table id="piece-description">
                             <tr>
@@ -158,7 +170,12 @@
                       </tr>
                       <input type="hidden" id="collection-name" value="Buvard" />
                       <tr>
-                        <td class="deal" style="padding-top: 5px">
+                        <td class="find">
+                          <div id="find-request"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="deal" style="display: none; padding-top: 5px">
                           <div id="make-a-deal"></div>
                         </td>
                       </tr>
@@ -215,10 +232,12 @@
       </div>
     </div>
 
-
   </body>
   
   <div id="haggle-div" title="Let's Make a Deal!">
+  </div>
+
+  <div id="request-div" title="Let Us Find It For You!">
   </div>
 
   <div class="footer">
