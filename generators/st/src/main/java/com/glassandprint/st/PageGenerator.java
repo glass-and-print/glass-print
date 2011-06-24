@@ -39,6 +39,8 @@ public class PageGenerator {
     DIR_TO_COLLECTION.put("small-format", "Buvard");
     DIR_TO_COLLECTION.put("vivo-typo", "Typographic Posters");
     DIR_TO_COLLECTION.put("travel", "Travel Posters");
+    DIR_TO_COLLECTION.put("berlinale", "Berlinale");
+    DIR_TO_COLLECTION.put("just-for-fun", "Just For Fun");
   }
 
   public static void generatePages(String pathToSourceDirectory,
