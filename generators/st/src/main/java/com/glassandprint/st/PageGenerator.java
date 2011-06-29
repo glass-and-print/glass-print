@@ -22,7 +22,7 @@ public class PageGenerator {
 
   public static void main(String[] args) throws FileNotFoundException,
                                                 IOException {
-    PageGenerator.generatePages(args[0], args[1], args[2]);
+    PageGenerator.generatePages(args[0], args[1], args[2], args.length > 3);
   }
 
   private final static Pattern EXPANDED_AUTHOR =
@@ -45,7 +45,8 @@ public class PageGenerator {
 
   public static void generatePages(String pathToSourceDirectory,
                                    String pathToTemplatesDirectory,
-                                   String pathToOutputDirectory)
+                                   String pathToOutputDirectory,
+                                   boolean overwriteTargets)
   throws FileNotFoundException, IOException {
     StringTemplateGroup group =
       new StringTemplateGroup("glassandprint-templates",
@@ -55,7 +56,8 @@ public class PageGenerator {
     StringTemplate singlePrevOnly = group.getInstanceOf("singleprevonly");
     StringTemplate multi = group.getInstanceOf("multi");
     List<File> sourceFiles = getSourceFiles(pathToSourceDirectory, 
-                                            pathToOutputDirectory);
+                                            pathToOutputDirectory,
+                                            overwriteTargets);
     FileWriter multiWriter = openForWriting(pathToOutputDirectory, 
                                             "multi.html");
     for (int i = 0; i < sourceFiles.size(); i++) {
@@ -102,7 +104,8 @@ public class PageGenerator {
   }
 
   private static List<File> getSourceFiles(final String pathToSourceDirectory,
-                                           final String pathToOutputDirectory) {
+                                           final String pathToOutputDirectory,
+                                           final boolean overwriteTargets) {
     return Arrays.asList(
       (new File(pathToSourceDirectory)).listFiles(
         new FileFilter() {
@@ -115,10 +118,12 @@ public class PageGenerator {
               return false;
             }
             
-            File generatedPage = new File(new File(pathToOutputDirectory),
-                                          getFileBase(file) + ".html");
-            if (generatedPage.exists()) {
-              return false;
+            if (!overwriteTargets) {
+              File generatedPage = new File(new File(pathToOutputDirectory),
+                                            getFileBase(file) + ".html");
+              if (generatedPage.exists()) {
+                return false;
+              }
             }
             
             return true;
