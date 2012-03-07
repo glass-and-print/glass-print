@@ -1,4 +1,4 @@
-// TODO unit test 
+// TODO unit test
 
 function getTextFieldVal(textFieldId) {
   var result = $("#" + textFieldId).val();
