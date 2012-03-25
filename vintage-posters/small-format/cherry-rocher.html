@@ -30,13 +30,13 @@
     <script type="text/javascript" src="/javascript/jquery.js"></script>
     <script type="text/javascript" src="/javascript/jquery-ui.js"></script>
     <script type="text/javascript" src="/javascript/jaml.js"></script>
-    <script type="text/javascript" src="/javascript/deal.js"></script>
+    <script type="text/javascript" src="/javascript/find.js"></script>
     <script type="text/javascript">
       //<![CDATA[
       $(function() {
-        var dealDiv = $("#make-a-deal");
-        dealDiv.html("make a deal");
-        dealDiv.click(function() { dealListener(); });
+        var findRequestDiv = $("#find-request");
+        findRequestDiv.html("ask us to find it");
+        findRequestDiv.click(function() { findRequestListener(); });
       });
       //]]>
     </script>
@@ -130,36 +130,16 @@
                           Cherry Rocher
                         </td>
                       </tr>
+                      <input type="hidden" id="collection-name" value="Buvard" />
+                      <input value="Cherry Rocher" class="product-title" type="hidden">
                       <tr>
-                        <td style="padding-top: 5px;">
-                          <table id="piece-description">
-                            <tr>
-                              <td>
-                                $40.00US
-                              </td>
-                              <td style="padding-left: 5px">
-                                <div class="product">
-                                  <input value="Cherry Rocher"
-                                         class="product-title"
-                                         type="hidden">
-                                  <input value="/images/vintage-posters/small-format/cherry-rocher.jpg"
-                                         class="product-image"
-                                         type="hidden">
-                                  <input value="40.00"
-                                         class="product-price"
-                                         type="hidden">
-                                  <img class="googlecart-add"
-                                       src="/images/cart.jpg"/> 
-                                </div>
-                              </td>
-                            </tr>
-                          </table>
+                        <td style="padding-top: 10px;">
+                          <font color="purple"><b>SOLD</b></font>
                         </td>
                       </tr>
-                      <input type="hidden" id="collection-name" value="Buvard" />
                       <tr>
-                        <td class="deal" style="padding-top: 5px">
-                          <div id="make-a-deal"></div>
+                        <td class="find">
+                          <div id="find-request"></div>
                         </td>
                       </tr>
                       <tr>
@@ -210,10 +190,9 @@
       </div>
     </div>
 
-
   </body>
   
-  <div id="haggle-div" title="Let's Make a Deal!">
+  <div id="request-div" title="Let Us Find It For You!">
   </div>
 
   <div class="footer">
