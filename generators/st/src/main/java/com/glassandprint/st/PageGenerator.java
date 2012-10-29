@@ -41,6 +41,7 @@ public class PageGenerator {
     DIR_TO_COLLECTION.put("travel", "Travel Posters");
     DIR_TO_COLLECTION.put("berlinale", "Berlinale");
     DIR_TO_COLLECTION.put("just-for-fun", "Just For Fun");
+    DIR_TO_COLLECTION.put("bulgarian-masters", "Bulgarian Masters");
   }
 
   public static void generatePages(String pathToSourceDirectory,
