@@ -160,11 +160,13 @@
                         </td>
                       </tr>
                       <input type="hidden" id="collection-name" value="$collection$" />
+                      <!--
                       <tr>
                         <td class="deal" style="padding-top: 5px">
                           <div id="make-a-deal"></div>
                         </td>
                       </tr>
+                      -->
                       <tr>
                         <td colspan="2" style="padding-top: 15px">
                           $authorexpanded$
