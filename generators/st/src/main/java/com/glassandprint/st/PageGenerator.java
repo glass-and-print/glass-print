@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 import org.antlr.stringtemplate.StringTemplate;
 import org.antlr.stringtemplate.StringTemplateGroup;
 
+// FIXME Close a bunch of file handles.
 public class PageGenerator {
 
   public static void main(String[] args) throws FileNotFoundException,
