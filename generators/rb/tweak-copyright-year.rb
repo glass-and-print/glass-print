@@ -15,7 +15,7 @@ if ARGV.size != 1
 end
 
 copyright_notice = <<COPYRIGHT_NOTICE
-    &copy; 2007-2011 Glass and Print
+    Happy New Year! Get 25% - 50% off on any item by sending us an <a href="mailto:toni@glass-print.com?subject=HAPPY">email</a> with subject line "HAPPY".
 COPYRIGHT_NOTICE
 
 www_page_regex = Regexp.new '^.*\.html$'
@@ -26,7 +26,7 @@ Find.find ARGV[0] do |path|
     dest_path = path + ".tmp"
     dest = File.new dest_path, "w"
     while line = source.gets
-      if line =~ /.*&copy;\s+\d{4}(\s+-\s+\d{4})?.*/
+      if line =~ /^\s*&copy;\s+\d{4}(\s*-\s*\d{4})?\s+Glass and Print\s*$/
         dest.puts copyright_notice
       else
         dest.puts line
