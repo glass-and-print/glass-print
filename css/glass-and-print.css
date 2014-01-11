@@ -320,6 +320,10 @@ table.all-pieces-details td.pricetag {
   width: 100%;
 }
 
+.footer a {
+  color: white;
+}
+
 .deal div {
   color: white;
   background-color: #FF0040;
