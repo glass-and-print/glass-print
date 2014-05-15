@@ -195,7 +195,10 @@ for p in d.find_all('table', 'all-pieces-details'):
             print ','.join(record)
             skippy = False
     if skippy:
-        skipped.append(f)
+        if handl:
+            skipped.append(handl)
+        else:
+            print >> sys.stderr, 'ERROR: Cannot determine the handle for the ' + str(p) + ' piece.'
 
 if len(skipped) > 0:
     print >> sys.stderr, 'skipped pieces: ' + ', '.join(skipped)
